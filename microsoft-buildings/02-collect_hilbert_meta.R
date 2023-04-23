@@ -5,7 +5,7 @@ library(arrow)
 plan(multisession)
 
 parquets <- list.files(
-  "microsoft-building-footprints/by_state",
+  "microsoft-buildings/by_state",
   ".parquet$",
   full.names = TRUE
 ) |>
@@ -92,7 +92,7 @@ future_walk(parquets, function(f) {
 }, .progress = TRUE)
 
 meta_parquets <- list.files(
-  "microsoft-building-footprints/by_state",
+  "microsoft-buildings/by_state",
   "_meta.parquet$",
   full.names = TRUE
 )
@@ -106,7 +106,7 @@ meta_hilbert <- meta_dataset |>
 
 arrow::write_parquet(
   meta_hilbert,
-  "microsoft-building-footprints/by_state/00hilbert_meta.parquet",
-  # Roughly 100 MB of point coordinates per chunk
-  chunk_size = 65536
+  "microsoft-buildings/by_state/00hilbert_meta.parquet",
+  # Roughly 200 MB of point coordinates per chunk
+  chunk_size = 131072
 )

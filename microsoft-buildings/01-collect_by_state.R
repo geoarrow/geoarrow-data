@@ -10,7 +10,7 @@ library(furrr)
 plan(multisession)
 
 base_url <- "https://usbuildingdata.blob.core.windows.net/usbuildings-v2"
-by_state_path <- "microsoft-building-footprints/by_state"
+by_state_path <- "microsoft-buildings/by_state"
 
 if (dir.exists(by_state_path)) {
   unlink(by_state_path, recursive = TRUE)
