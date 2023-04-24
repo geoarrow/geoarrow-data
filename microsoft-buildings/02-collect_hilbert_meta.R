@@ -107,6 +107,6 @@ meta_hilbert <- meta_dataset |>
 arrow::write_parquet(
   meta_hilbert,
   "microsoft-buildings/by_state/00hilbert_meta.parquet",
-  # Roughly 200 MB of point coordinates per chunk
-  chunk_size = 131072
+  # Roughly 100 MB of point coordinates per chunk
+  chunk_size = 6553600
 )
