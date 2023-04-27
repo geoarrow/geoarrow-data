@@ -5,9 +5,9 @@ The Nova Scotia Water data set (i.e., the Nova Scotia Hydrographic Network) and 
 
 These data were obtained under an *Unrestricted Data Use License Agreement for Government Geographic Data* as specified by the Province of Nova Scotia [Geospatial Data Directory](https://nsgi.novascotia.ca/gdd/).
 
-## Data
+## Data (latest-dev)
 
-### Metadata
+Metadata:
 
-- [NSHN Attribute_Specs.pdf](https://github.com/paleolimbot/geoarrow-data/raw/master/nshn/NSHN%20Attribute_Specs.pdf)
-- [nshn_feature_code.csv](https://github.com/paleolimbot/geoarrow-data/raw/master/nshn/nshn_feature_code.csv)
+- ns-water_attribute-specs ([pdf](https://github.com/geoarrow/geoarrow-data/raw/main/ns-water/ns-water_attribute-specs.pdf))
+- ns-water_feature-codes ([parquet](https://github.com/geoarrow/geoarrow-data/raw/main/ns-water/ns-water_feature-codes.parquet))
