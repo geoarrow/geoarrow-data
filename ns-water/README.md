@@ -9,5 +9,8 @@ These data were obtained under an *Unrestricted Data Use License Agreement for G
 
 Metadata:
 
-- ns-water_attribute-specs ([pdf](https://github.com/geoarrow/geoarrow-data/raw/main/ns-water/ns-water_attribute-specs.pdf))
-- ns-water_feature-codes ([parquet](https://github.com/geoarrow/geoarrow-data/raw/main/ns-water/ns-water_feature-codes.parquet))
+- ns-water-attribute_specs ([pdf](https://github.com/geoarrow/geoarrow-data/raw/main/ns-water/ns-water-attribute_specs.pdf))
+- ns-water-feature_codes ([parquet](https://github.com/geoarrow/geoarrow-data/raw/main/ns-water/ns-water-feature_codes.parquet))
+
+Data:
+
