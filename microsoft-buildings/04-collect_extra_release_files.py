@@ -41,7 +41,7 @@ def wkb_to_geoarrow_interleaved(chunked):
 
 
 # Translate points to interleaved format
-reader = parquet.ParquetFile(f"microsoft-buildings/microsoft-buildings-point-1.parquet")
+reader = parquet.ParquetFile(f"microsoft-buildings/microsoft-buildings-point_1.parquet")
 schema = reader.schema_arrow
 geo_meta = schema.metadata[b"geo"]
 reader.close()
@@ -52,13 +52,13 @@ schema_out = schema.set(
 )
 schema_out = schema_out.with_metadata({"geo": geo_meta})
 
-for f in glob.glob("microsoft-buildings/microsoft-buildings-point-*.parquet"):
+for f in glob.glob("microsoft-buildings/microsoft-buildings-point_*.parquet"):
     reader = parquet.ParquetFile(f)
 
     writer = parquet.ParquetWriter(
         re.sub(
-            r"-buildings-point-([0-9]+).parquet",
-            r"-buildings-interleaved-point-\1.parquet",
+            r"-buildings-point_([0-9]+).parquet",
+            r"-buildings-point_\1-interleaved.parquet",
             f,
         ),
         schema_out,
@@ -77,7 +77,7 @@ for f in glob.glob("microsoft-buildings/microsoft-buildings-point-*.parquet"):
 
 
 # Translate polygons to geoarrow + interleaved format
-reader = parquet.ParquetFile(f"microsoft-buildings/microsoft-buildings-wkb-1.parquet")
+reader = parquet.ParquetFile(f"microsoft-buildings/microsoft-buildings-polygon_1-wkb.parquet")
 schema = reader.schema_arrow
 geo_meta = schema.metadata[b"geo"]
 reader.close()
@@ -102,19 +102,19 @@ geo_meta_out = re.sub(
 schema_out = schema_out.with_metadata({"geo": geo_meta})
 schema_out_interleaved = schema_out_interleaved.with_metadata({"geo": geo_meta_out})
 
-for f in glob.glob("microsoft-buildings/microsoft-buildings-wkb-*.parquet"):
+for f in glob.glob("microsoft-buildings/microsoft-buildings-polygon_*-wkb.parquet"):
     reader = parquet.ParquetFile(f)
 
     writer = parquet.ParquetWriter(
-        re.sub(r"-buildings-wkb-([0-9]+).parquet", r"-buildings-polygon-\1.parquet", f),
+        re.sub(r"-buildings-polygon_([0-9]+)-wkb.parquet", r"-buildings-polygon_\1.parquet", f),
         schema_out,
         compression="zstd",
     )
 
     writer_interleaved = parquet.ParquetWriter(
         re.sub(
-            r"-buildings-wkb-([0-9]+).parquet",
-            r"-buildings-interleaved-polygon-\1.parquet",
+            r"-buildings-polygon_([0-9]+)-wkb.parquet",
+            r"-buildings-polygon_\1-interleaved.parquet",
             f,
         ),
         schema_out_interleaved,

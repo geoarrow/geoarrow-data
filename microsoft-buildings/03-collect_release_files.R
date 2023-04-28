@@ -88,7 +88,7 @@ reinit_points_writer <- function() {
 
   points_stream <<- LocalFileSystem$create()$OpenOutputStream(
     sprintf(
-      "microsoft-buildings/microsoft-buildings-point-%d.parquet",
+      "microsoft-buildings/microsoft-buildings-point_%d.parquet",
       points_i
     )
   )
@@ -120,7 +120,7 @@ reinit_wkb_writer <- function() {
 
   wkb_stream <<- LocalFileSystem$create()$OpenOutputStream(
     sprintf(
-      "microsoft-buildings/microsoft-buildings-wkb-%d.parquet",
+      "microsoft-buildings/microsoft-buildings-polygon_%d-wkb.parquet",
       wkb_i
     )
   )
