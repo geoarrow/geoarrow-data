@@ -85,12 +85,12 @@ for (nm in names(examples_wk_wkt)) {
 
   write_parquet(
     table_wkt,
-    glue::glue("example/{nm}-wkt.parquet"),
+    glue::glue("example/example-{nm}-wkt.parquet"),
     compression = "uncompressed"
   )
   write_parquet(
     table_wkb,
-    glue::glue("example/{nm}-wkb.parquet"),
+    glue::glue("example/example-{nm}-wkb.parquet"),
     compression = "uncompressed"
   )
 }

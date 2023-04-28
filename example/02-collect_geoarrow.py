@@ -12,17 +12,17 @@ for f in glob.glob("example/*-wkt.parquet"):
 
     type_out = None
     geometry_type_str = os.path.basename(f)
-    if geometry_type_str.startswith("point"):
+    if geometry_type_str.startswith("example-point"):
         type_out = ga.point()
-    elif geometry_type_str.startswith("linestring"):
+    elif geometry_type_str.startswith("example-linestring"):
         type_out = ga.linestring()
-    elif geometry_type_str.startswith("polygon"):
+    elif geometry_type_str.startswith("example-polygon"):
         type_out = ga.polygon()
-    elif geometry_type_str.startswith("multipoint"):
+    elif geometry_type_str.startswith("example-multipoint"):
         type_out = ga.multipoint()
-    elif geometry_type_str.startswith("multilinestring"):
+    elif geometry_type_str.startswith("example-multilinestring"):
         type_out = ga.multilinestring()
-    elif geometry_type_str.startswith("multipolygon"):
+    elif geometry_type_str.startswith("example-multipolygon"):
         type_out = ga.multipolygon()
     else:
         # e.g., geometrycollection
