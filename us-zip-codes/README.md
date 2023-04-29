@@ -5,6 +5,7 @@ This collection of United States Zip Codes (i.e., postal codes) is derived from 
 
 <!-- begin file listing -->
 
-## Data (latest-dev)
 
-- us-zip-codes ([parquet/wkb](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-wkb.parquet), [parquet/multipolygon](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-multipolygon.parquet), [parquet/interleaved multipolygon](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-interleaved-multipolygon.parquet), [gpkg](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes.gpkg))
+## Data (main)
+
+- us-zip-codes ([gpkg](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes.gpkg), [parquet](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes.parquet), [parquet/interleaved](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-interleaved.parquet), [parquet/wkb](https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-wkb.parquet))
