@@ -3,6 +3,8 @@
 
 These files are toy example files useful for testing and simple examples. Their main purpose is to make it easy to test full coverage of the geometry type/dimension/coordinate type grid. The examples are based on the [wk R package](https://github.com/paleolimbot/wk)'s `wk::wk_example_wkt` data set.
 
+<!-- begin file listing -->
+
 # Data (latest-dev)
 
 - point ([gpkg](https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point.gpkg), [parquet/wkt](https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkt.parquet), [parquet/wkb](https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkb.parquet), [parquet](https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point.parquet), [parquet/interleaved](https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-interleaved.parquet))

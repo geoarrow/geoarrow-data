@@ -5,6 +5,8 @@ The [Microsoft U.S. Building Footprints](https://github.com/microsoft/USBuilding
 
 The original data is licensed under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/) and is made available here under the same license.
 
+<!-- begin file listing -->
+
 ## Data (latest-dev)
 
 Building centroids (point):

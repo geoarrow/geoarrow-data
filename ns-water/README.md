@@ -5,6 +5,8 @@ The Nova Scotia Water data set (i.e., the Nova Scotia Hydrographic Network) and 
 
 These data were obtained under an *Unrestricted Data Use License Agreement for Government Geographic Data* as specified by the Province of Nova Scotia [Geospatial Data Directory](https://nsgi.novascotia.ca/gdd/).
 
+<!-- begin file listing -->
+
 ## Data (latest-dev)
 
 Metadata:
