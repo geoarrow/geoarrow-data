@@ -69,7 +69,7 @@ zip_codes_interleaved = pa.table(
 
 parquet.write_table(
     zip_codes_interleaved,
-    "us-zip-codes/us-zip-codes-interleaved-multipolygon.parquet",
+    "us-zip-codes/us-zip-codes-interleaved.parquet",
     compression="ZSTD",
 )
 
@@ -88,6 +88,6 @@ zip_codes_geoarrow = pa.table(
 
 parquet.write_table(
     zip_codes_geoarrow,
-    "us-zip-codes/us-zip-codes-multipolygon.parquet",
+    "us-zip-codes/us-zip-codes.parquet",
     compression="ZSTD",
 )

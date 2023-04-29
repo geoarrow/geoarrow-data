@@ -1,0 +1,37 @@
+group: example
+format:
+- gpkg
+- parquet
+- parquet/interleaved
+- parquet/wkt
+- parquet/wkb
+file_location: repo
+files:
+- name: point
+- name: linestring
+- name: polygon
+- name: multipoint
+- name: multilinestring
+- name: multipolygon
+- name: geometrycollection
+- name: point_z
+- name: linestring_z
+- name: polygon_z
+- name: multipoint_z
+- name: multilinestring_z
+- name: multipolygon_z
+- name: geometrycollection_z
+- name: point_m
+- name: linestring_m
+- name: polygon_m
+- name: multipoint_m
+- name: multilinestring_m
+- name: multipolygon_m
+- name: geometrycollection_m
+- name: point_zm
+- name: linestring_zm
+- name: polygon_zm
+- name: multipoint_zm
+- name: multilinestring_zm
+- name: multipolygon_zm
+- name: geometrycollection_zm

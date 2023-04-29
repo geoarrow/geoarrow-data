@@ -1,0 +1,17 @@
+group: ns-water
+format:
+- gpkg
+- parquet
+- parquet/interleaved
+- parquet/wkb
+file_location: release
+files:
+- name: basin_line
+- name: basin_point
+- name: basin_poly
+- name: land_poly
+- name: water_cent
+- name: water_junc
+- name: water_line
+- name: water_point
+- name: water_poly

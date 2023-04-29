@@ -94,3 +94,12 @@ for (nm in names(examples_wk_wkt)) {
     compression = "uncompressed"
   )
 }
+
+# write manifest.yaml
+list(
+  group = "example",
+  format = c("gpkg", "parquet", "parquet/interleaved", "parquet/wkt", "parquet/wkb"),
+  file_location = "repo",
+  files = lapply(names(examples_wk_wkt), function(x) list(name = x))
+) |>
+  yaml::write_yaml("example/manifest.yaml")
