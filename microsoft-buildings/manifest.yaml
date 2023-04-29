@@ -5,7 +5,7 @@ files:
   format:
   - parquet
   - parquet/interleaved
-- name: point_1
+- name: point_2
   format:
   - parquet
   - parquet/interleaved

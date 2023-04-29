@@ -738,14 +738,14 @@
     format: parquet/interleaved
     file_location: release
     url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_1-interleaved.parquet
-  - name: point_1
+  - name: point_2
     format: parquet
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_1.parquet
-  - name: point_1
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_2.parquet
+  - name: point_2
     format: parquet/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_1-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_2-interleaved.parquet
   - name: polygon_1
     format: parquet
     file_location: release
