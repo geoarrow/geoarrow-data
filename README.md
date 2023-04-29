@@ -7,14 +7,14 @@ This repository is a collection of recipies to make a few large-ish data sets av
 
 Toy example files covering the grid of geometry types (point, linestring, polygon, multipoint, multilinestring, multipolygon, geometrycollection), dimensions (xy, xyz, xym, xyzm), and encodings (wkt, wkb, struct coordinates, interleaved coordinates).
 
-## [Microsoft U.S. Buliding Footprints](microsoft-buildings#readme)
+## [Nova Scotia Water](ns-water#readme)
 
-A geoarrow port of a large (130 million features) polygon data set.
+A geoarrow port of the Nova Scotia Hydrometric Network. This is useful as an example of a projected and aligned set of layers with realisitc attributes.
 
 ## [U.S. Zip Codes](us-zip-codes#readme)
 
 A geoarrow port of the U.S. Census Bureau's zip code polygons data set.
 
-## [Nova Scotia Water](ns-water#readme)
+## [Microsoft U.S. Buliding Footprints](microsoft-buildings#readme)
 
-A geoarrow port of the Nova Scotia Hydrometric Network. This is useful as an example of a projected and aligned set of layers with realisitc attributes.
+A geoarrow port of a large (130 million features) polygon data set.
