@@ -30,7 +30,11 @@ files_main <- files |>
       format == "parquet" ~ ".parquet",
       format == "parquet/interleaved" ~ "-interleaved.parquet",
       format == "parquet/wkb" ~ "-wkb.parquet",
-      format == "parquet/wkt" ~ "-wkt.parquet"
+      format == "parquet/wkt" ~ "-wkt.parquet",
+      format == "arrows" ~ ".arrows",
+      format == "arrows/interleaved" ~ "-interleaved.arrows",
+      format == "arrows/wkb" ~ "-wkb.arrows",
+      format == "arrows/wkt" ~ "-wkt.arrows"
     ),
     file_name = paste0(prefixed_name, format_postfix),
     url = if_else(
