@@ -1,9 +1,16 @@
 import pyarrow as pa
 import pyarrow.parquet as parquet
+import pyarrow.ipc as ipc
 import geoarrow.pyarrow as ga
 import glob
 import os
 import re
+
+
+def write_ipc(tab, filename):
+    with open(filename, "wb") as f, ipc.new_stream(f, tab.schema) as stream:
+        stream.write_table(tab)
+
 
 for f in glob.glob("example/*-wkt.parquet"):
     table = parquet.read_table(f)
@@ -39,6 +46,7 @@ for f in glob.glob("example/*-wkt.parquet"):
     parquet.write_table(
         table_out, re.sub("-wkt.parquet", ".parquet", f), compression="NONE"
     )
+    write_ipc(table_out, re.sub("-wkt.parquet", ".arrows", f))
 
     type_out = type_out.with_coord_type(ga.CoordType.INTERLEAVED)
     schema_out = pa.schema([pa.field("geometry", type_out)]).with_metadata(
@@ -51,3 +59,4 @@ for f in glob.glob("example/*-wkt.parquet"):
     parquet.write_table(
         table_out, re.sub("-wkt.parquet", "-interleaved.parquet", f), compression="NONE"
     )
+    write_ipc(table_out, re.sub("-wkt.parquet", "-interleaved.arrows", f))

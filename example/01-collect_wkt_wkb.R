@@ -88,9 +88,19 @@ for (nm in names(examples_wk_wkt)) {
     glue::glue("example/example-{nm}-wkt.parquet"),
     compression = "uncompressed"
   )
+  write_ipc_stream(
+    table_wkt,
+    glue::glue("example/example-{nm}-wkt.arrows"),
+    compression = "uncompressed"
+  )
   write_parquet(
     table_wkb,
     glue::glue("example/example-{nm}-wkb.parquet"),
+    compression = "uncompressed"
+  )
+  write_ipc_stream(
+    table_wkb,
+    glue::glue("example/example-{nm}-wkb.arrows"),
     compression = "uncompressed"
   )
 }
@@ -98,7 +108,11 @@ for (nm in names(examples_wk_wkt)) {
 # write manifest.yaml
 list(
   group = "example",
-  format = c("gpkg", "parquet", "parquet/interleaved", "parquet/wkt", "parquet/wkb"),
+  format = c(
+    "gpkg",
+    "parquet", "parquet/interleaved", "parquet/wkt", "parquet/wkb",
+    "arrows", "arrows/interleaved", "arrows/wkt", "arrows/wkb"
+  ),
   file_location = "repo",
   files = lapply(names(examples_wk_wkt), function(x) list(name = x))
 ) |>
