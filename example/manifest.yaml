@@ -5,6 +5,10 @@ format:
 - parquet/interleaved
 - parquet/wkt
 - parquet/wkb
+- arrows
+- arrows/interleaved
+- arrows/wkt
+- arrows/wkb
 file_location: repo
 files:
 - name: point
