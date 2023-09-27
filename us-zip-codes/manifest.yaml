@@ -1,9 +1,0 @@
-group: us-zip-codes
-format:
-- gpkg
-- parquet
-- parquet/interleaved
-- parquet/wkb
-file_location: release
-files:
-- name: us-zip-codes
