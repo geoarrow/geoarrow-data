@@ -1,46 +1,75 @@
 import pyarrow as pa
 import pyarrow.feather as feather
 import geoarrow.pyarrow as ga
-import pandas as pd
 import pyogrio
+import pyproj
 import glob
 import re
 import sys
 
-# e.g. collect_geoarrow.py *.gpkg EPSG:32620
-pattern = sys.argv[1]
-crs = sys.argv[2] if len(sys.argv) >= 3 else None
-
-print(f"Pattern: '{pattern}'; CRS: '{crs}'")
+# e.g. gpkg_to_geoarrow.py separate,interleaved,wkb,wkt "*.gpkg"
+formats = sys.argv[1].lower().split(",")
+pattern = sys.argv[2]
+strip_crs = "--strip-crs" in sys.argv
+compression = "zstd" if "--compress" in sys.argv else "uncompressed"
 
 for f in glob.glob(pattern):
-    print(f"Processing {f}...")
-    geodf = pyogrio.read_dataframe(f)
-    if crs:
-        geodf = geodf.to_crs(crs)
+    print(f"Reading {f}...")
 
-    geometry = ga.as_geoarrow(geodf.geometry)
+    info, table = pyogrio.raw.read_arrow(f)
+    geometry = ga.as_geoarrow(table.column(info["geometry_name"]))
+    prj = pyproj.CRS(info["crs"])
+    if not strip_crs:
+        # Need to fix ga.with_crs() to work with ChunkedArray
+        geometry = pa.chunked_array(
+            [ga.with_crs(chunk, prj.to_json()) for chunk in geometry.chunks]
+        )
+
+    for i, nm in enumerate(table.column_names):
+        if nm == info["geometry_name"]:
+            table = table.remove_column(i)
+            break
+
     assert geometry.type.coord_type == ga.CoordType.SEPARATE
 
-    df = pd.DataFrame({k: v for k, v in geodf.items() if k != "geometry"})
-    table = pa.table(df)
+    if "separate" in formats:
+        out = re.sub(".gpkg", ".arrow", f)
+        print(f"Writing {out}...")
 
-    feather.write_feather(
-        table.append_column("geometry", geometry),
-        re.sub(".gpkg", ".arrow", f),
-        compression="zstd",
-    )
+        feather.write_feather(
+            table.append_column("geometry", geometry),
+            out,
+            compression=compression,
+        )
 
-    feather.write_feather(
-        table.append_column(
-            "geometry", ga.with_coord_type(geometry, ga.CoordType.INTERLEAVED)
-        ),
-        re.sub(".gpkg", "-interleaved.arrow", f),
-        compression="zstd",
-    )
+    if "interleaved" in formats:
+        out = re.sub(".gpkg", "-interleaved.arrow", f)
+        print(f"Writing {out}...")
 
-    feather.write_feather(
-        table.append_column("geometry", ga.as_wkb(geometry)),
-        re.sub(".gpkg", "-wkb.arrow", f),
-        compression="zstd",
-    )
+        feather.write_feather(
+            table.append_column(
+                "geometry", ga.with_coord_type(geometry, ga.CoordType.INTERLEAVED)
+            ),
+            out,
+            compression=compression,
+        )
+
+    if "wkb" in formats:
+        out = re.sub(".gpkg", "-wkb.arrow", f)
+        print(f"Writing {out}...")
+
+        feather.write_feather(
+            table.append_column("geometry", ga.as_wkb(geometry)),
+            out,
+            compression=compression,
+        )
+
+    if "wkt" in formats:
+        out = re.sub(".gpkg", "-wkt.arrow", f)
+        print(f"Writing {out}...")
+
+        feather.write_feather(
+            table.append_column("geometry", ga.as_wkt(geometry)),
+            out,
+            compression=compression,
+        )
