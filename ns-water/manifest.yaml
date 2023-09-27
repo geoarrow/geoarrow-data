@@ -1,9 +1,9 @@
 group: ns-water
 format:
 - gpkg
-- parquet
-- parquet/interleaved
-- parquet/wkb
+- arrow
+- arrow/interleaved
+- arrow/wkb
 file_location: release
 files:
 - name: basin_line

@@ -1,0 +1,6 @@
+git+https://github.com/geoarrow/geoarrow-python.git#egg=geoarrow-pyarrow&subdirectory=geoarrow-pyarrow
+git+https://github.com/geoarrow/geoarrow-python.git#egg=geoarrow-pandas&subdirectory=geoarrow-pandas
+pyogrio
+pyarrow
+geopandas
+pandas
