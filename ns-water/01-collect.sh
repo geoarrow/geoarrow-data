@@ -5,3 +5,5 @@ do
     ogr2ogr "${f_out}" "${f}" -dim XY
     mv "${f_out}" ns-water
 done
+
+python gpkg_to_geoarrow.py "ns-water/*.gpkg" "EPSG:32620"
