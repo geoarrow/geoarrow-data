@@ -1,6 +1,8 @@
 
 library(tidyverse)
 
+tag <- "v0.1.0"
+
 files <- tibble(
   group = c("example", "ns-water", "microsoft-buildings"),
   manifest_file = glue::glue("{group}/manifest.yaml"),
@@ -22,7 +24,7 @@ files <- tibble(
 files_main <- files |>
   unnest_longer(format) |>
   mutate(
-    tag = "main",
+    tag = tag,
     release = if_else(tag == "main", "latest-dev", tag),
     prefixed_name = if_else(name == group, name, paste0(group, "-", name)),
     format_postfix = case_when(
