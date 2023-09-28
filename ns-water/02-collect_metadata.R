@@ -15,11 +15,11 @@ file.copy(
 
 list(
   group = "ns-water",
-  format = c("gpkg", "arrow", "arrow/interleaved", "arrow/wkb"),
+  format = c("fgb/zip", "arrow", "arrow/interleaved", "arrow/wkb"),
   file_location = "release",
-  files = list.files("ns-water", "\\.gpkg$") |>
+  files = list.files("ns-water", "\\.fgb$") |>
     stringr::str_remove("ns-water-") |>
-    stringr::str_remove(".gpkg") |>
+    stringr::str_remove(".fgb") |>
     lapply(function(x) list(name = x))
 ) |>
   yaml::write_yaml("ns-water/manifest.yaml")

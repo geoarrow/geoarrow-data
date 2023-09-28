@@ -37,25 +37,7 @@ states_zip <- c("Alabama.geojson.zip", "Alaska.geojson.zip",
   "Washington.geojson.zip", "WestVirginia.geojson.zip", "Wisconsin.geojson.zip",
   "Wyoming.geojson.zip")
 
-# Do by state in parallel
+# Download by state in parallel
 future_walk(states_zip, function(state_zip) {
-  state_geojson <- stringr::str_remove(state_zip, "\\.zip$")
-  state_geoparquet <- stringr::str_replace(
-    state_zip,
-    "\\.geojson.zip$",
-    ".parquet"
-  )
-
-  zip_path <- file.path(by_state_path, state_zip)
-  geojson_path <- file.path(by_state_path, state_geojson)
-  geoparquet_path <- file.path(by_state_path, state_geoparquet)
-
-  # Download
   curl::curl_download(file.path(base_url, state_zip), zip_path)
-
-  # Decompress
-  unzip(zip_path, exdir = by_state_path)
-
-  # Convert to geoparquet
-  system(glue::glue("ogr2ogr {geoparquet_path} {geojson_path}"))
 }, .progress = TRUE)

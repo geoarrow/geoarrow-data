@@ -17,8 +17,7 @@ for (nm in names(examples_wk_wkt)) {
 list(
   group = "example",
   format = c(
-    "gpkg",
-    "arrow", "arrow/interleaved", "arrow/wkt", "arrow/wkb"
+    "gpkg", "arrow", "arrow/interleaved", "arrow/wkt", "arrow/wkb"
   ),
   file_location = "repo",
   files = lapply(names(examples_wk_wkt), function(x) list(name = x))

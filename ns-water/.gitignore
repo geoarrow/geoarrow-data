@@ -1,3 +1,4 @@
 nshn_v2/
-*.gpkg
+*.fgb
+*.fgb.zip
 *.arrow

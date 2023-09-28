@@ -1,41 +1,9 @@
 group: microsoft-buildings
 file_location: release
 files:
-- name: point_1
+- name: point
   format:
-  - parquet
-  - parquet/interleaved
-- name: point_2
-  format:
-  - parquet
-  - parquet/interleaved
-- name: polygon_1
-  format:
-  - parquet
-  - parquet/interleaved
-  - parquet/wkb
-- name: polygon_2
-  format:
-  - parquet
-  - parquet/interleaved
-  - parquet/wkb
-- name: polygon_3
-  format:
-  - parquet
-  - parquet/interleaved
-  - parquet/wkb
-- name: polygon_4
-  format:
-  - parquet
-  - parquet/interleaved
-  - parquet/wkb
-- name: polygon_5
-  format:
-  - parquet
-  - parquet/interleaved
-  - parquet/wkb
-- name: polygon_6
-  format:
-  - parquet
-  - parquet/interleaved
-  - parquet/wkb
+  - fgb/zip
+  - arrow
+  - arrow/interleaved
+  - arrow/wkb

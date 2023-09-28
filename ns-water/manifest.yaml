@@ -1,6 +1,6 @@
 group: ns-water
 format:
-- gpkg
+- fgb/zip
 - arrow
 - arrow/interleaved
 - arrow/wkb
