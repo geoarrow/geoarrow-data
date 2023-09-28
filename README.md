@@ -11,10 +11,6 @@ Toy example files covering the grid of geometry types (point, linestring, polygo
 
 A geoarrow port of the Nova Scotia Hydrometric Network. This is useful as an example of a projected and aligned set of layers with realisitc attributes.
 
-## [U.S. Zip Codes](us-zip-codes#readme)
-
-A geoarrow port of the U.S. Census Bureau's zip code polygons data set.
-
 ## [Microsoft U.S. Buliding Footprints](microsoft-buildings#readme)
 
 A geoarrow port of a large (130 million features) polygon data set.
