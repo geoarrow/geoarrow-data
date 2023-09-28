@@ -3,7 +3,7 @@ import glob
 import os
 import pandas as pd
 
-out_fgb = "microsoft-buildings/microsoft-buildings-point.fgb"
+out_fgb = "microsoft-buildings/microsoft-buildings-point-bigger.fgb"
 if os.path.exists(out_fgb):
     os.unlink(out_fgb)
 

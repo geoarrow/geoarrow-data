@@ -6,4 +6,3 @@ files:
   - fgb/zip
   - arrow
   - arrow/interleaved
-  - arrow/wkb

@@ -643,7 +643,3 @@
     format: arrow/interleaved
     file_location: release
     url: https://github.com/geoarrow/geoarrow-data/releases/download/v0.1.0/microsoft-buildings-point-interleaved.arrow
-  - name: point
-    format: arrow/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/v0.1.0/microsoft-buildings-point-wkb.arrow
