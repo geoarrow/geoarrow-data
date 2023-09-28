@@ -6,1263 +6,644 @@
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point.gpkg
   - name: point
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point.arrow
   - name: point
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-interleaved.arrow
   - name: point
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkt.arrow
   - name: point
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkb.parquet
-  - name: point
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point.arrows
-  - name: point
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-interleaved.arrows
-  - name: point
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkt.arrows
-  - name: point
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point-wkb.arrow
   - name: linestring
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring.gpkg
   - name: linestring
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring.arrow
   - name: linestring
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-interleaved.arrow
   - name: linestring
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-wkt.arrow
   - name: linestring
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-wkb.parquet
-  - name: linestring
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring.arrows
-  - name: linestring
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-interleaved.arrows
-  - name: linestring
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-wkt.arrows
-  - name: linestring
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring-wkb.arrow
   - name: polygon
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon.gpkg
   - name: polygon
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon.arrow
   - name: polygon
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-interleaved.arrow
   - name: polygon
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-wkt.arrow
   - name: polygon
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-wkb.parquet
-  - name: polygon
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon.arrows
-  - name: polygon
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-interleaved.arrows
-  - name: polygon
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-wkt.arrows
-  - name: polygon
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon-wkb.arrow
   - name: multipoint
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint.gpkg
   - name: multipoint
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint.arrow
   - name: multipoint
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-interleaved.arrow
   - name: multipoint
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-wkt.arrow
   - name: multipoint
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-wkb.parquet
-  - name: multipoint
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint.arrows
-  - name: multipoint
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-interleaved.arrows
-  - name: multipoint
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-wkt.arrows
-  - name: multipoint
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint-wkb.arrow
   - name: multilinestring
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring.gpkg
   - name: multilinestring
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring.arrow
   - name: multilinestring
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-interleaved.arrow
   - name: multilinestring
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-wkt.arrow
   - name: multilinestring
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-wkb.parquet
-  - name: multilinestring
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring.arrows
-  - name: multilinestring
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-interleaved.arrows
-  - name: multilinestring
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-wkt.arrows
-  - name: multilinestring
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring-wkb.arrow
   - name: multipolygon
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon.gpkg
   - name: multipolygon
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon.arrow
   - name: multipolygon
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-interleaved.arrow
   - name: multipolygon
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-wkt.arrow
   - name: multipolygon
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-wkb.parquet
-  - name: multipolygon
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon.arrows
-  - name: multipolygon
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-interleaved.arrows
-  - name: multipolygon
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-wkt.arrows
-  - name: multipolygon
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-wkb.arrows
-  - name: geometrycollection
-    format: gpkg
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection.gpkg
-  - name: geometrycollection
-    format: parquet
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection.parquet
-  - name: geometrycollection
-    format: parquet/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection-interleaved.parquet
-  - name: geometrycollection
-    format: parquet/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection-wkt.parquet
-  - name: geometrycollection
-    format: parquet/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection-wkb.parquet
-  - name: geometrycollection
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection.arrows
-  - name: geometrycollection
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection-interleaved.arrows
-  - name: geometrycollection
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection-wkt.arrows
-  - name: geometrycollection
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon-wkb.arrow
   - name: point_z
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z.gpkg
   - name: point_z
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z.arrow
   - name: point_z
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-interleaved.arrow
   - name: point_z
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-wkt.arrow
   - name: point_z
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-wkb.parquet
-  - name: point_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z.arrows
-  - name: point_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-interleaved.arrows
-  - name: point_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-wkt.arrows
-  - name: point_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_z-wkb.arrow
   - name: linestring_z
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z.gpkg
   - name: linestring_z
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z.arrow
   - name: linestring_z
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-interleaved.arrow
   - name: linestring_z
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-wkt.arrow
   - name: linestring_z
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-wkb.parquet
-  - name: linestring_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z.arrows
-  - name: linestring_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-interleaved.arrows
-  - name: linestring_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-wkt.arrows
-  - name: linestring_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_z-wkb.arrow
   - name: polygon_z
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z.gpkg
   - name: polygon_z
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z.arrow
   - name: polygon_z
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-interleaved.arrow
   - name: polygon_z
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-wkt.arrow
   - name: polygon_z
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-wkb.parquet
-  - name: polygon_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z.arrows
-  - name: polygon_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-interleaved.arrows
-  - name: polygon_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-wkt.arrows
-  - name: polygon_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_z-wkb.arrow
   - name: multipoint_z
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z.gpkg
   - name: multipoint_z
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z.arrow
   - name: multipoint_z
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-interleaved.arrow
   - name: multipoint_z
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-wkt.arrow
   - name: multipoint_z
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-wkb.parquet
-  - name: multipoint_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z.arrows
-  - name: multipoint_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-interleaved.arrows
-  - name: multipoint_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-wkt.arrows
-  - name: multipoint_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_z-wkb.arrow
   - name: multilinestring_z
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z.gpkg
   - name: multilinestring_z
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z.arrow
   - name: multilinestring_z
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-interleaved.arrow
   - name: multilinestring_z
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-wkt.arrow
   - name: multilinestring_z
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-wkb.parquet
-  - name: multilinestring_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z.arrows
-  - name: multilinestring_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-interleaved.arrows
-  - name: multilinestring_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-wkt.arrows
-  - name: multilinestring_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_z-wkb.arrow
   - name: multipolygon_z
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z.gpkg
   - name: multipolygon_z
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z.arrow
   - name: multipolygon_z
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-interleaved.arrow
   - name: multipolygon_z
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-wkt.arrow
   - name: multipolygon_z
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-wkb.parquet
-  - name: multipolygon_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z.arrows
-  - name: multipolygon_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-interleaved.arrows
-  - name: multipolygon_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-wkt.arrows
-  - name: multipolygon_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-wkb.arrows
-  - name: geometrycollection_z
-    format: gpkg
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z.gpkg
-  - name: geometrycollection_z
-    format: parquet
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z.parquet
-  - name: geometrycollection_z
-    format: parquet/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z-interleaved.parquet
-  - name: geometrycollection_z
-    format: parquet/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z-wkt.parquet
-  - name: geometrycollection_z
-    format: parquet/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z-wkb.parquet
-  - name: geometrycollection_z
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z.arrows
-  - name: geometrycollection_z
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z-interleaved.arrows
-  - name: geometrycollection_z
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z-wkt.arrows
-  - name: geometrycollection_z
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_z-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_z-wkb.arrow
   - name: point_m
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m.gpkg
   - name: point_m
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m.arrow
   - name: point_m
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-interleaved.arrow
   - name: point_m
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-wkt.arrow
   - name: point_m
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-wkb.parquet
-  - name: point_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m.arrows
-  - name: point_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-interleaved.arrows
-  - name: point_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-wkt.arrows
-  - name: point_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_m-wkb.arrow
   - name: linestring_m
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m.gpkg
   - name: linestring_m
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m.arrow
   - name: linestring_m
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-interleaved.arrow
   - name: linestring_m
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-wkt.arrow
   - name: linestring_m
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-wkb.parquet
-  - name: linestring_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m.arrows
-  - name: linestring_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-interleaved.arrows
-  - name: linestring_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-wkt.arrows
-  - name: linestring_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_m-wkb.arrow
   - name: polygon_m
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m.gpkg
   - name: polygon_m
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m.arrow
   - name: polygon_m
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-interleaved.arrow
   - name: polygon_m
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-wkt.arrow
   - name: polygon_m
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-wkb.parquet
-  - name: polygon_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m.arrows
-  - name: polygon_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-interleaved.arrows
-  - name: polygon_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-wkt.arrows
-  - name: polygon_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_m-wkb.arrow
   - name: multipoint_m
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m.gpkg
   - name: multipoint_m
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m.arrow
   - name: multipoint_m
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-interleaved.arrow
   - name: multipoint_m
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-wkt.arrow
   - name: multipoint_m
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-wkb.parquet
-  - name: multipoint_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m.arrows
-  - name: multipoint_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-interleaved.arrows
-  - name: multipoint_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-wkt.arrows
-  - name: multipoint_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_m-wkb.arrow
   - name: multilinestring_m
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m.gpkg
   - name: multilinestring_m
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m.arrow
   - name: multilinestring_m
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-interleaved.arrow
   - name: multilinestring_m
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-wkt.arrow
   - name: multilinestring_m
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-wkb.parquet
-  - name: multilinestring_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m.arrows
-  - name: multilinestring_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-interleaved.arrows
-  - name: multilinestring_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-wkt.arrows
-  - name: multilinestring_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_m-wkb.arrow
   - name: multipolygon_m
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m.gpkg
   - name: multipolygon_m
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m.arrow
   - name: multipolygon_m
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-interleaved.arrow
   - name: multipolygon_m
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-wkt.arrow
   - name: multipolygon_m
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-wkb.parquet
-  - name: multipolygon_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m.arrows
-  - name: multipolygon_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-interleaved.arrows
-  - name: multipolygon_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-wkt.arrows
-  - name: multipolygon_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-wkb.arrows
-  - name: geometrycollection_m
-    format: gpkg
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m.gpkg
-  - name: geometrycollection_m
-    format: parquet
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m.parquet
-  - name: geometrycollection_m
-    format: parquet/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m-interleaved.parquet
-  - name: geometrycollection_m
-    format: parquet/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m-wkt.parquet
-  - name: geometrycollection_m
-    format: parquet/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m-wkb.parquet
-  - name: geometrycollection_m
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m.arrows
-  - name: geometrycollection_m
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m-interleaved.arrows
-  - name: geometrycollection_m
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m-wkt.arrows
-  - name: geometrycollection_m
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_m-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_m-wkb.arrow
   - name: point_zm
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm.gpkg
   - name: point_zm
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm.arrow
   - name: point_zm
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-interleaved.arrow
   - name: point_zm
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-wkt.arrow
   - name: point_zm
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-wkb.parquet
-  - name: point_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm.arrows
-  - name: point_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-interleaved.arrows
-  - name: point_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-wkt.arrows
-  - name: point_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-point_zm-wkb.arrow
   - name: linestring_zm
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm.gpkg
   - name: linestring_zm
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm.arrow
   - name: linestring_zm
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-interleaved.arrow
   - name: linestring_zm
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-wkt.arrow
   - name: linestring_zm
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-wkb.parquet
-  - name: linestring_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm.arrows
-  - name: linestring_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-interleaved.arrows
-  - name: linestring_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-wkt.arrows
-  - name: linestring_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-linestring_zm-wkb.arrow
   - name: polygon_zm
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm.gpkg
   - name: polygon_zm
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm.arrow
   - name: polygon_zm
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-interleaved.arrow
   - name: polygon_zm
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-wkt.arrow
   - name: polygon_zm
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-wkb.parquet
-  - name: polygon_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm.arrows
-  - name: polygon_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-interleaved.arrows
-  - name: polygon_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-wkt.arrows
-  - name: polygon_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-polygon_zm-wkb.arrow
   - name: multipoint_zm
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm.gpkg
   - name: multipoint_zm
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm.arrow
   - name: multipoint_zm
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-interleaved.arrow
   - name: multipoint_zm
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-wkt.arrow
   - name: multipoint_zm
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-wkb.parquet
-  - name: multipoint_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm.arrows
-  - name: multipoint_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-interleaved.arrows
-  - name: multipoint_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-wkt.arrows
-  - name: multipoint_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipoint_zm-wkb.arrow
   - name: multilinestring_zm
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm.gpkg
   - name: multilinestring_zm
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm.arrow
   - name: multilinestring_zm
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-interleaved.arrow
   - name: multilinestring_zm
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-wkt.arrow
   - name: multilinestring_zm
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-wkb.parquet
-  - name: multilinestring_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm.arrows
-  - name: multilinestring_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-interleaved.arrows
-  - name: multilinestring_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-wkt.arrows
-  - name: multilinestring_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multilinestring_zm-wkb.arrow
   - name: multipolygon_zm
     format: gpkg
     file_location: repo
     url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm.gpkg
   - name: multipolygon_zm
-    format: parquet
+    format: arrow
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm.arrow
   - name: multipolygon_zm
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-interleaved.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-interleaved.arrow
   - name: multipolygon_zm
-    format: parquet/wkt
+    format: arrow/wkt
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-wkt.parquet
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-wkt.arrow
   - name: multipolygon_zm
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-wkb.parquet
-  - name: multipolygon_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm.arrows
-  - name: multipolygon_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-interleaved.arrows
-  - name: multipolygon_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-wkt.arrows
-  - name: multipolygon_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-wkb.arrows
-  - name: geometrycollection_zm
-    format: gpkg
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm.gpkg
-  - name: geometrycollection_zm
-    format: parquet
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm.parquet
-  - name: geometrycollection_zm
-    format: parquet/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm-interleaved.parquet
-  - name: geometrycollection_zm
-    format: parquet/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm-wkt.parquet
-  - name: geometrycollection_zm
-    format: parquet/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm-wkb.parquet
-  - name: geometrycollection_zm
-    format: arrows
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm.arrows
-  - name: geometrycollection_zm
-    format: arrows/interleaved
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm-interleaved.arrows
-  - name: geometrycollection_zm
-    format: arrows/wkt
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm-wkt.arrows
-  - name: geometrycollection_zm
-    format: arrows/wkb
-    file_location: repo
-    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-geometrycollection_zm-wkb.arrows
+    url: https://raw.githubusercontent.com/geoarrow/geoarrow-data/main/example/example-multipolygon_zm-wkb.arrow
 - group: ns-water
   tag: main
   files:
   - name: basin_line
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line.fgb.zip
   - name: basin_line
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line.arrow
   - name: basin_line
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line-interleaved.arrow
   - name: basin_line
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_line-wkb.arrow
   - name: basin_point
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point.fgb.zip
   - name: basin_point
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point.arrow
   - name: basin_point
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point-interleaved.arrow
   - name: basin_point
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_point-wkb.arrow
   - name: basin_poly
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly.fgb.zip
   - name: basin_poly
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly.arrow
   - name: basin_poly
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly-interleaved.arrow
   - name: basin_poly
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-basin_poly-wkb.arrow
   - name: land_poly
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly.fgb.zip
   - name: land_poly
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly.arrow
   - name: land_poly
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly-interleaved.arrow
   - name: land_poly
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-land_poly-wkb.arrow
   - name: water_cent
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent.fgb.zip
   - name: water_cent
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent.arrow
   - name: water_cent
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent-interleaved.arrow
   - name: water_cent
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_cent-wkb.arrow
   - name: water_junc
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc.fgb.zip
   - name: water_junc
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc.arrow
   - name: water_junc
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc-interleaved.arrow
   - name: water_junc
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_junc-wkb.arrow
   - name: water_line
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line.fgb.zip
   - name: water_line
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line.arrow
   - name: water_line
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line-interleaved.arrow
   - name: water_line
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_line-wkb.arrow
   - name: water_point
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point.fgb.zip
   - name: water_point
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point.arrow
   - name: water_point
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point-interleaved.arrow
   - name: water_point
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_point-wkb.arrow
   - name: water_poly
-    format: gpkg
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly.gpkg
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly.fgb.zip
   - name: water_poly
-    format: parquet
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly.arrow
   - name: water_poly
-    format: parquet/interleaved
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly-interleaved.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly-interleaved.arrow
   - name: water_poly
-    format: parquet/wkb
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly-wkb.parquet
-- group: us-zip-codes
-  tag: main
-  files:
-  - name: us-zip-codes
-    format: gpkg
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes.gpkg
-  - name: us-zip-codes
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes.parquet
-  - name: us-zip-codes
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-interleaved.parquet
-  - name: us-zip-codes
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/us-zip-codes-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/ns-water-water_poly-wkb.arrow
 - group: microsoft-buildings
   tag: main
   files:
-  - name: point_1
-    format: parquet
+  - name: point
+    format: fgb/zip
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_1.parquet
-  - name: point_1
-    format: parquet/interleaved
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point.fgb.zip
+  - name: point
+    format: arrow
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_1-interleaved.parquet
-  - name: point_2
-    format: parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point.arrow
+  - name: point
+    format: arrow/interleaved
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_2.parquet
-  - name: point_2
-    format: parquet/interleaved
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point-interleaved.arrow
+  - name: point
+    format: arrow/wkb
     file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point_2-interleaved.parquet
-  - name: polygon_1
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_1.parquet
-  - name: polygon_1
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_1-interleaved.parquet
-  - name: polygon_1
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_1-wkb.parquet
-  - name: polygon_2
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_2.parquet
-  - name: polygon_2
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_2-interleaved.parquet
-  - name: polygon_2
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_2-wkb.parquet
-  - name: polygon_3
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_3.parquet
-  - name: polygon_3
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_3-interleaved.parquet
-  - name: polygon_3
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_3-wkb.parquet
-  - name: polygon_4
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_4.parquet
-  - name: polygon_4
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_4-interleaved.parquet
-  - name: polygon_4
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_4-wkb.parquet
-  - name: polygon_5
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_5.parquet
-  - name: polygon_5
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_5-interleaved.parquet
-  - name: polygon_5
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_5-wkb.parquet
-  - name: polygon_6
-    format: parquet
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_6.parquet
-  - name: polygon_6
-    format: parquet/interleaved
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_6-interleaved.parquet
-  - name: polygon_6
-    format: parquet/wkb
-    file_location: release
-    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-polygon_6-wkb.parquet
+    url: https://github.com/geoarrow/geoarrow-data/releases/download/latest-dev/microsoft-buildings-point-wkb.arrow

@@ -2,7 +2,7 @@
 library(tidyverse)
 
 files <- tibble(
-  group = c("example", "ns-water", "us-zip-codes", "microsoft-buildings"),
+  group = c("example", "ns-water", "microsoft-buildings"),
   manifest_file = glue::glue("{group}/manifest.yaml"),
   manifest = lapply(manifest_file, yaml::read_yaml)
 ) |>
@@ -27,14 +27,11 @@ files_main <- files |>
     prefixed_name = if_else(name == group, name, paste0(group, "-", name)),
     format_postfix = case_when(
       format == "gpkg" ~ ".gpkg",
-      format == "parquet" ~ ".parquet",
-      format == "parquet/interleaved" ~ "-interleaved.parquet",
-      format == "parquet/wkb" ~ "-wkb.parquet",
-      format == "parquet/wkt" ~ "-wkt.parquet",
-      format == "arrows" ~ ".arrows",
-      format == "arrows/interleaved" ~ "-interleaved.arrows",
-      format == "arrows/wkb" ~ "-wkb.arrows",
-      format == "arrows/wkt" ~ "-wkt.arrows"
+      format == "fgb/zip" ~ ".fgb.zip",
+      format == "arrow" ~ ".arrow",
+      format == "arrow/interleaved" ~ "-interleaved.arrow",
+      format == "arrow/wkb" ~ "-wkb.arrow",
+      format == "arrow/wkt" ~ "-wkt.arrow"
     ),
     file_name = paste0(prefixed_name, format_postfix),
     url = if_else(

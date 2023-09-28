@@ -8,6 +8,11 @@ if os.path.exists(out_fgb):
     os.unlink(out_fgb)
 
 for i, f in enumerate(sorted(glob.glob("microsoft-buildings/by_state/*.geojson.zip"))):
+    if "Alaska" in f or "Hawaii" in f:
+        # We're *very* close to 2 GiB...skipping these to help get us there
+        print(f"Skpping {f}")
+        continue
+
     print(f"Reading {f}")
     df = pyogrio.read_dataframe(f"/vsizip/{f}", columns=["geometry"])
     df.insert(0, "row_number", pd.Series(range(len(df))))
