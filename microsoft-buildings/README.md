@@ -1,5 +1,5 @@
 
-# Microsoft U.S. Buliding Footprints
+# Microsoft U.S. Building Footprints
 
 The [Microsoft U.S. Building Footprints](https://github.com/microsoft/USBuildingFootprints) data set is a collection of ~130 million polygon outlines of buildings derived from satellite imagery. The version of the data set in this repository is does not include Alaska or Hawaii, is repackaged as a single point for each building, and compressed using ZSTD compression to minimize file size and facilitate downloading.
 
