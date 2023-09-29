@@ -13,4 +13,4 @@ A geoarrow port of the Nova Scotia Hydrometric Network. This is useful as an exa
 
 ## [Microsoft U.S. Buliding Footprints](microsoft-buildings#readme)
 
-A geoarrow port of a large (130 million features) polygon data set.
+A geoarrow port of a large (130 million features) point data set.

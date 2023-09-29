@@ -29,7 +29,7 @@ readme_content <- files |>
   select(-link_summary) |>
   summarise(
     file_listing = paste(bullet, collapse = "\n"),
-    file_summary = glue::glue("## Data ({tag[1]})\n\n{file_listing}"),
+    file_summary = glue::glue("## Files\n\n{file_listing}"),
     .groups = "drop_last"
   ) |>
   select(-file_listing) |>

@@ -6,7 +6,7 @@ These files are toy example files useful for testing and simple examples. Their 
 <!-- begin file listing -->
 
 
-## Data (v0.1.0)
+## Files
 
 - point ([gpkg](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-point.gpkg), [arrow](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-point.arrow), [arrow/interleaved](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-point-interleaved.arrow), [arrow/wkt](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-point-wkt.arrow), [arrow/wkb](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-point-wkb.arrow))
 - linestring ([gpkg](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-linestring.gpkg), [arrow](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-linestring.arrow), [arrow/interleaved](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-linestring-interleaved.arrow), [arrow/wkt](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-linestring-wkt.arrow), [arrow/wkb](https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.1.0/example/example-linestring-wkb.arrow))
