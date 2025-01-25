@@ -1,5 +1,8 @@
+git+https://github.com/geoarrow/geoarrow-python.git#egg=geoarrow-types&subdirectory=geoarrow-types
 git+https://github.com/geoarrow/geoarrow-python.git#egg=geoarrow-pyarrow&subdirectory=geoarrow-pyarrow
-git+https://github.com/geoarrow/geoarrow-python.git#egg=geoarrow-pandas&subdirectory=geoarrow-pandas
+geoarrow-rust-core >= 0.4.0b3
+geoarrow-rust-io >= 0.4.0b3
+geoarrow-rust-compute >= 0.4.0b3
 pyogrio
 pyarrow
 geopandas
