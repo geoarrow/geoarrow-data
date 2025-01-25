@@ -10,6 +10,7 @@ point:
 - null
 linestring:
 - LINESTRING (30 10, 10 30, 40 40)
+- LINESTRING (40 20, 20 40, 50 50)
 - LINESTRING EMPTY
 - null
 polygon:
@@ -41,6 +42,7 @@ point_z:
 - null
 linestring_z:
 - LINESTRING Z (30 10 40, 10 30 40, 40 40 80)
+- LINESTRING Z (40 20 60, 20 40 60, 50 50 100)
 - LINESTRING Z EMPTY
 - null
 polygon_z:
@@ -75,6 +77,7 @@ point_m:
 - null
 linestring_m:
 - LINESTRING M (30 10 300, 10 30 300, 40 40 1600)
+- LINESTRING M (40 20 800, 20 40 800, 50 50 2500)
 - LINESTRING M EMPTY
 - null
 polygon_m:
@@ -110,6 +113,7 @@ point_zm:
 - null
 linestring_zm:
 - LINESTRING ZM (30 10 40 300, 10 30 40 300, 40 40 80 1600)
+- LINESTRING ZM (40 20 60 800, 20 40 60 800, 50 50 100 2500)
 - LINESTRING ZM EMPTY
 - null
 polygon_zm:
