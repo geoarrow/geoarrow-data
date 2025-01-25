@@ -6,6 +6,9 @@ examples_wk_wkt <- wk::wk_example_wkt[-1]
 examples_wk_wkt <-
   examples_wk_wkt[!grepl("geometrycollection", names(examples_wk_wkt))]
 
+yaml::write_yaml(examples_wk_wkt, "example_src.yaml")
+
+
 for (nm in names(examples_wk_wkt)) {
   df <- data.frame(row_number = seq_along(examples_wk_wkt[[nm]]))
   df$geometry <- sf::st_as_sfc(examples_wk_wkt[[nm]])
