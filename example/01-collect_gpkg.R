@@ -2,7 +2,7 @@ library(wk)
 library(sf)
 
 # Don't use nc or geometrycollection
-examples_wk_wkt <- wk::wk_example_wkt[-1]
+examples_wk_wkt <- wk::wk_example_wkt
 examples_wk_wkt <-
   examples_wk_wkt[!grepl("geometrycollection", names(examples_wk_wkt))]
 
