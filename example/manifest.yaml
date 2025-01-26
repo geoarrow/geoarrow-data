@@ -1,33 +1,49 @@
 group: example
 format:
-- gpkg
-- arrow
-- arrow/interleaved
-- arrow/wkt
-- arrow/wkb
+- tsv
+- arrows
+- arrows/interleaved
+- arrows/wkt
+- arrows/wkb
+- arrows/union
+- geoparquet
+- geoparquet/native
 file_location: repo
 files:
+- name: geometry
 - name: point
 - name: linestring
 - name: polygon
 - name: multipoint
 - name: multilinestring
 - name: multipolygon
+- name: geometrycollection
+- name: geometrycollection_nested
+- name: geometry_z
 - name: point_z
 - name: linestring_z
 - name: polygon_z
 - name: multipoint_z
 - name: multilinestring_z
 - name: multipolygon_z
+- name: geometrycollection_z
+- name: geometrycollection_nested_z
+- name: geometry_m
 - name: point_m
 - name: linestring_m
 - name: polygon_m
 - name: multipoint_m
 - name: multilinestring_m
 - name: multipolygon_m
+- name: geometrycollection_m
+- name: geometrycollection_nested_m
+- name: geometry_zm
 - name: point_zm
 - name: linestring_zm
 - name: polygon_zm
 - name: multipoint_zm
 - name: multilinestring_zm
 - name: multipolygon_zm
+- name: geometrycollection_zm
+- name: geometrycollection_nested_zm
+- name: geometry_mixed_dimensions
