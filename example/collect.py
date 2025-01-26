@@ -5,6 +5,7 @@ import geoarrow.types as gat
 import pyarrow as pa
 import yaml
 from pyarrow import ipc
+from geoarrow.pyarrow import io
 
 here = pathlib.Path(__file__).parent
 
@@ -26,7 +27,7 @@ def read_examples():
     return examples
 
 
-def write_tsv_from_wkt(ex, dst):
+def write_tsv(ex, dst):
     with open(dst, "w") as f:
         f.write("geometry\n")
         for item in ex:
@@ -34,7 +35,7 @@ def write_tsv_from_wkt(ex, dst):
             f.write("\n")
 
 
-def write_native_from_wkt(ex, coord_type, dst):
+def write_native(ex, coord_type, dst):
     array = ga.as_geoarrow(ex, coord_type=coord_type)
     assert array.type.encoding == gat.Encoding.GEOARROW
     assert array.type.coord_type == coord_type
@@ -44,7 +45,7 @@ def write_native_from_wkt(ex, coord_type, dst):
         writer.write_table(table)
 
 
-def write_wkb_from_wkt(ex, dst):
+def write_wkb(ex, dst):
     array = ga.as_wkb(ex)
     assert array.type.encoding == gat.Encoding.WKB
 
@@ -53,10 +54,29 @@ def write_wkb_from_wkt(ex, dst):
         writer.write_table(table)
 
 
-def write_wkt_from_wkt(ex, dst):
+def write_wkt(ex, dst):
     array = ga.as_wkt(ex)
     assert array.type.encoding == gat.Encoding.WKT
 
     table = pa.table({"wkt": ex, "geometry": array})
     with ipc.new_stream(dst, table.schema) as writer:
         writer.write_table(table)
+
+
+def write_geoparquet(ex, dst):
+    array = ga.as_wkb(ex)
+    table = pa.table({"wkt": ex, "geometry": array})
+    io.write_geoparquet_table(table, dst, write_bbox=True, write_geometry_types=True)
+
+
+def write_geoparquet_native(ex, dst):
+    array = ga.as_geoarrow(ex)
+    assert array.type.encoding == gat.Encoding.GEOARROW
+    table = pa.table({"wkt": ex, "geometry": array})
+    io.write_geoparquet_table(
+        table,
+        dst,
+        write_bbox=True,
+        write_geometry_types=True,
+        geometry_encoding=io.geoparquet_encoding_geoarrow(),
+    )
