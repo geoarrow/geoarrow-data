@@ -1,4 +1,5 @@
 import pathlib
+import shutil
 
 import geoarrow.pyarrow as ga
 import geoarrow.types as gat
@@ -17,15 +18,19 @@ def read_examples():
             examples.update(yaml.safe_load(f))
 
     # Add one example so that we have one GEOMETRY example with mixed dimensions
-    examples["geometry_mixed_dimensions"] = (
+    examples["geometry-mixed-dimensions"] = (
         examples["geometry"]
-        + examples["geometry_z"]
-        + examples["geometry_m"]
-        + examples["geometry_zm"]
+        + examples["geometry-z"]
+        + examples["geometry-m"]
+        + examples["geometry-zm"]
     )
 
     return examples
 
+
+def read_manifest():
+    with open(here / "manifest.yaml") as f:
+        return yaml.safe_load(f)
 
 def write_tsv(ex, dst):
     with open(dst, "w") as f:
@@ -80,3 +85,57 @@ def write_geoparquet_native(ex, dst):
         write_geometry_types=True,
         geometry_encoding=io.geoparquet_encoding_geoarrow(),
     )
+
+
+def write_file(examples, ex_name, ex_format):
+    ex_wkt = examples[ex_name]
+    out_file = here / "files" / f"example_{ex_name}{SUFFIXES[ex_format]}"
+
+    if ex_format == "tsv":
+        write_tsv(ex_wkt, out_file)
+    elif ex_format == "arrows":
+        write_native(ex_wkt, gat.CoordType.SEPARATED, out_file)
+    elif ex_format == "arrows/interleaved":
+        write_native(ex_wkt, gat.CoordType.INTERLEAVED, out_file)
+    elif ex_format == "arrows/wkb":
+        write_wkb(ex_wkt, out_file)
+    elif ex_format == "arrows/wkt":
+        write_wkt(ex_wkt, out_file)
+    elif ex_format == "geoparquet":
+        write_geoparquet(ex_wkt, out_file)
+    elif ex_format == "geoparquet/native":
+        write_geoparquet_native(ex_wkt, out_file)
+    else:
+        raise ValueError(f"Unsupported format: {ex_format}")
+
+
+SUFFIXES = {
+    "tsv": ".tsv",
+    "arrows": ".arrows",
+    "arrows/interleaved": "_interleaved.arrows",
+    "arrows/wkb": "_wkb.arrows",
+    "arrows/wkt": "_wkt.arrows",
+    "geoparquet": ".parquet",
+    "geoparquet/native": "_native.parquet",
+}
+
+
+if __name__ == "__main__":
+    examples = read_examples()
+    manifest = read_manifest()
+
+    formats = manifest["format"]
+    files = manifest["files"]
+
+    if (here / "files").exists():
+        shutil.rmtree(here / "files")
+
+    (here / "files").mkdir()
+
+    for file in files:
+        name = file["name"]
+        skip_format = [] if "skip_format" not in file else file["skip_format"]
+        for ex_format in formats:
+            if ex_format in skip_format:
+                continue
+            write_file(examples, name, ex_format)
