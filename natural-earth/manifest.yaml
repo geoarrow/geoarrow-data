@@ -1,0 +1,9 @@
+group: natural-earth
+format:
+- arrow/wkb
+- geoparquet
+file_location: release
+files:
+- name: cities
+- name: countries
+- name: countries-geography
