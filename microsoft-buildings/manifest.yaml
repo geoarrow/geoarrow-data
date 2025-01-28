@@ -6,3 +6,6 @@ files:
   - fgb/zip
   - arrow
   - arrow/interleaved
+  - arrow/wkb
+  - geoparquet
+  - geoparquet/native
