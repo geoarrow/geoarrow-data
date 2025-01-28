@@ -10,3 +10,4 @@ pyarrow
 pyyaml
 geopandas
 pandas
+duckdb
