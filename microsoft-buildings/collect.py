@@ -177,6 +177,7 @@ def write_fgb(lazy=True):
         if os.system(f"zip {out_tmp.name} {out_fgb}") != 0:
             raise ValueError("zip command failed")
 
+        os.unlink(out_fgb)
         os.rename(out_tmp, out)
     finally:
         os.chdir(wdir)

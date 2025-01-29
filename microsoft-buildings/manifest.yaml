@@ -4,8 +4,8 @@ files:
 - name: point
   format:
   - fgb/zip
-  - arrow
-  - arrow/interleaved
-  - arrow/wkb
+  - arrows
+  - arrows/interleaved
+  - arrows/wkb
   - geoparquet
   - geoparquet/native

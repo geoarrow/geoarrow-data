@@ -1,6 +1,6 @@
 group: natural-earth
 format:
-- arrow/wkb
+- arrows/wkb
 - geoparquet
 file_location: release
 files:

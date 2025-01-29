@@ -1,9 +1,9 @@
 group: ns-water
 format:
 - fgb/zip
-- arrow
-- arrow/interleaved
-- arrow/wkb
+- arrows
+- arrows/interleaved
+- arrows/wkb
 - geoparquet
 - geoparquet/native
 file_location: release
