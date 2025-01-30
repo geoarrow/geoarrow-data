@@ -108,28 +108,3 @@ SUFFIXES = {
 }
 
 FORMATS = {v: k for k, v in SUFFIXES.items()}
-
-if __name__ == "__main__":
-    all_files = list_files()
-    print(f"Found and validated names for {len(all_files)} files")
-
-    all_manifests = list_manifests()
-    files_chk = {f.path.name for f in all_files}
-    for manifest in all_manifests:
-        for file in manifest.list_files():
-            if not file.path.exists():
-                raise ValueError(
-                    f"file '{file.path}' in manifest '{manifest.path}' does not exist"
-                )
-            files_chk.remove(file.path.name)
-
-    print(
-        f"Checked {len(all_manifests)} manifests and ensured all declared files exist"
-    )
-
-    if len(files_chk) > 0:
-        raise ValueError(
-            f"Found {len(files_chk)} files not referenced by a manifest: {files_chk}"
-        )
-
-    print(f"All {len(all_files)} files are declared in a manifest")
