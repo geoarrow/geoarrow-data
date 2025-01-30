@@ -10,10 +10,24 @@ GROUPS = ("example", "microsoft-buildings", "natural-earth", "ns-water")
 
 
 class File:
-    def __init__(self, path):
+    def __init__(self, path, file_location="release"):
         self.path = path
         self.group, self.name, self.suffix = parse_path(path)
         self.format = FORMATS[self.suffix]
+        self.file_location = file_location
+
+    def url(self, ref):
+        if self.file_location == "repo":
+            path = f"{ref}/{self.group}/files/{self.path.name}"
+            return f"https://raw.githubusercontent.com/geoarrow/geoarrow-data/{path}"
+        elif self.file_location == "release":
+            path = f"releases/download/{ref}/{self.path.name}"
+            return f"https://raw.githubusercontent.com/geoarrow/geoarrow-data/{path}"
+        else:
+            raise ValueError(f"Unknown file location: '{self.file_location}'")
+
+    def to_dict(self, ref):
+        return {"name": self.name, "format": self.format, "url": self.url(ref)}
 
 
 class Manifest:
@@ -22,6 +36,11 @@ class Manifest:
         with open(path) as f:
             self._obj = yaml.safe_load(f)
         self.group = self._obj["group"]
+        self.file_location = (
+            "release"
+            if "file_location" not in self._obj
+            else self._obj["file_location"]
+        )
         self._formats = self._obj["format"] if "format" in self._obj else []
 
     def list_file_info(self):
@@ -40,7 +59,7 @@ class Manifest:
 
     def list_files(self):
         for name, format in self.list_file_info():
-            yield File(path(self.group, name, format))
+            yield File(path(self.group, name, format), self.file_location)
 
 
 def path(group, name, format):
