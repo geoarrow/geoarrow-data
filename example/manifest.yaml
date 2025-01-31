@@ -1,33 +1,61 @@
 group: example
 format:
-- gpkg
-- arrow
-- arrow/interleaved
-- arrow/wkt
-- arrow/wkb
+- tsv
+- arrows
+- arrows/interleaved
+- arrows/wkt
+- arrows/wkb
+- geoparquet
+- geoparquet/native
 file_location: repo
 files:
+- name: geometry
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
 - name: point
 - name: linestring
 - name: polygon
 - name: multipoint
 - name: multilinestring
 - name: multipolygon
-- name: point_z
-- name: linestring_z
-- name: polygon_z
-- name: multipoint_z
-- name: multilinestring_z
-- name: multipolygon_z
-- name: point_m
-- name: linestring_m
-- name: polygon_m
-- name: multipoint_m
-- name: multilinestring_m
-- name: multipolygon_m
-- name: point_zm
-- name: linestring_zm
-- name: polygon_zm
-- name: multipoint_zm
-- name: multilinestring_zm
-- name: multipolygon_zm
+- name: geometrycollection
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometrycollection-nested
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometry-z
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: point-z
+- name: linestring-z
+- name: polygon-z
+- name: multipoint-z
+- name: multilinestring-z
+- name: multipolygon-z
+- name: geometrycollection-z
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometrycollection-nested-z
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometry-m
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: point-m
+- name: linestring-m
+- name: polygon-m
+- name: multipoint-m
+- name: multilinestring-m
+- name: multipolygon-m
+- name: geometrycollection-m
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometrycollection-nested-m
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometry-zm
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: point-zm
+- name: linestring-zm
+- name: polygon-zm
+- name: multipoint-zm
+- name: multilinestring-zm
+- name: multipolygon-zm
+- name: geometrycollection-zm
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometrycollection-nested-zm
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]
+- name: geometry-mixed-dimensions
+  skip_format: [arrows, arrows/interleaved, geoparquet/native]

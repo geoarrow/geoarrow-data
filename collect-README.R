@@ -1,21 +1,23 @@
 
 library(tidyverse)
+library(jsonlite)
 
-manifest <- yaml::read_yaml("manifest.yaml")
+manifest <- jsonlite::read_json("manifest.json")
 
 files <- tibble::tibble(
-  group_desc = manifest
+  group_desc = manifest$groups
 ) |>
   unnest_wider(group_desc) |>
   unnest_longer(files) |>
-  unnest_wider(files)
+  unnest_wider(files, names_sep = "_")
 
 readme_content <- files |>
   mutate(
-    group = as_factor(group),
-    tag = as_factor(tag),
-    name = as_factor(name),
-    format = as_factor(format)
+    group = as_factor(name),
+    tag = manifest$ref,
+    name = as_factor(files_name),
+    format = as_factor(files_format),
+    url = files_url
   ) |>
   mutate(
     md_link = glue::glue("[{format}]({url})")

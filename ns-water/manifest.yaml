@@ -1,17 +1,16 @@
 group: ns-water
 format:
 - fgb/zip
-- arrow
-- arrow/interleaved
-- arrow/wkb
+- arrows
+- arrows/interleaved
+- arrows/wkb
+- geoparquet
+- geoparquet/native
 file_location: release
 files:
-- name: basin_line
-- name: basin_point
-- name: basin_poly
-- name: land_poly
-- name: water_cent
-- name: water_junc
-- name: water_line
-- name: water_point
-- name: water_poly
+- name: elevation
+- name: land-poly
+- name: water-junc
+- name: water-line
+- name: water-point
+- name: water-poly
