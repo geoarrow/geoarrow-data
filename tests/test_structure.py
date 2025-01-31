@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import zipfile
 
@@ -17,6 +18,8 @@ from . import model
 )
 def test_structure(file: model.File):
     assert file.path.exists()
+    # We need all of these to be less than 2 GB
+    assert os.stat(file.path).st_size <= (2**31 - 1)
 
     if file.format == "arrows/wkb":
         table = read_format_arrows(file)
