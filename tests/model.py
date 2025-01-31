@@ -22,7 +22,7 @@ class File:
             return f"https://raw.githubusercontent.com/geoarrow/geoarrow-data/{path}"
         elif self.file_location == "release":
             path = f"releases/download/{ref}/{self.path.name}"
-            return f"https://raw.githubusercontent.com/geoarrow/geoarrow-data/{path}"
+            return f"https://github.com/geoarrow/geoarrow-data/{path}"
         else:
             raise ValueError(f"Unknown file location: '{self.file_location}'")
 

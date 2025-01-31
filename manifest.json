@@ -1112,32 +1112,32 @@
         {
           "name": "point",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.fgb.zip"
         },
         {
           "name": "point",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.arrows"
         },
         {
           "name": "point",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_interleaved.arrows"
         },
         {
           "name": "point",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_wkb.arrows"
         },
         {
           "name": "point",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.parquet"
         },
         {
           "name": "point",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_native.parquet"
         }
       ]
     },
@@ -1147,32 +1147,32 @@
         {
           "name": "cities",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_cities_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_cities_wkb.arrows"
         },
         {
           "name": "cities",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_cities.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_cities.parquet"
         },
         {
           "name": "countries",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries_wkb.arrows"
         },
         {
           "name": "countries",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries.parquet"
         },
         {
           "name": "countries-geography",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries-geography_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries-geography_wkb.arrows"
         },
         {
           "name": "countries-geography",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries-geography.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries-geography.parquet"
         }
       ]
     },
@@ -1182,182 +1182,182 @@
         {
           "name": "elevation",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.fgb.zip"
         },
         {
           "name": "elevation",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.arrows"
         },
         {
           "name": "elevation",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_interleaved.arrows"
         },
         {
           "name": "elevation",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_wkb.arrows"
         },
         {
           "name": "elevation",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.parquet"
         },
         {
           "name": "elevation",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_native.parquet"
         },
         {
           "name": "land-poly",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.fgb.zip"
         },
         {
           "name": "land-poly",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.arrows"
         },
         {
           "name": "land-poly",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_interleaved.arrows"
         },
         {
           "name": "land-poly",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_wkb.arrows"
         },
         {
           "name": "land-poly",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.parquet"
         },
         {
           "name": "land-poly",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_native.parquet"
         },
         {
           "name": "water-junc",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.fgb.zip"
         },
         {
           "name": "water-junc",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.arrows"
         },
         {
           "name": "water-junc",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_interleaved.arrows"
         },
         {
           "name": "water-junc",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_wkb.arrows"
         },
         {
           "name": "water-junc",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.parquet"
         },
         {
           "name": "water-junc",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_native.parquet"
         },
         {
           "name": "water-line",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.fgb.zip"
         },
         {
           "name": "water-line",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.arrows"
         },
         {
           "name": "water-line",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_interleaved.arrows"
         },
         {
           "name": "water-line",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_wkb.arrows"
         },
         {
           "name": "water-line",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.parquet"
         },
         {
           "name": "water-line",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_native.parquet"
         },
         {
           "name": "water-point",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.fgb.zip"
         },
         {
           "name": "water-point",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.arrows"
         },
         {
           "name": "water-point",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_interleaved.arrows"
         },
         {
           "name": "water-point",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_wkb.arrows"
         },
         {
           "name": "water-point",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.parquet"
         },
         {
           "name": "water-point",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_native.parquet"
         },
         {
           "name": "water-poly",
           "format": "fgb/zip",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.fgb.zip"
         },
         {
           "name": "water-poly",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.arrows"
         },
         {
           "name": "water-poly",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_interleaved.arrows"
         },
         {
           "name": "water-poly",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_wkb.arrows"
         },
         {
           "name": "water-poly",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.parquet"
         },
         {
           "name": "water-poly",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_native.parquet"
         }
       ]
     }
