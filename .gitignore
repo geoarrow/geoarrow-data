@@ -5,3 +5,4 @@
 .DS_Store
 release-files
 __pycache__
+.vscode

@@ -63,7 +63,7 @@ def write_countries_geography():
     geom = ga.with_crs(geom, ga.OGC_CRS84)
     geom = ga.with_edge_type(geom, ga.EdgeType.SPHERICAL)
     i = tab.schema.get_field_index("geog")
-    tab = tab.set_column(i, "geography", geom)
+    tab = tab.set_column(i, "geometry", geom)
 
     io.write_geoparquet_table(
         tab, here / "files" / "natural-earth_countries-geography.parquet"

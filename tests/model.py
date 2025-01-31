@@ -29,6 +29,9 @@ class File:
     def to_dict(self, ref):
         return {"name": self.name, "format": self.format, "url": self.url(ref)}
 
+    def __repr__(self):
+        return f"File({self.path.name})"
+
 
 class Manifest:
     def __init__(self, path):
