@@ -157,31 +157,17 @@ def write_geoparquet_native(lazy=True):
 
 def write_fgb(lazy=True):
     out_tmp = here / "files" / "microsoft-buildings_point.fgb.zip.tmp"
-    out_fgb = here / "files" / "microsoft-buildings_point.fgb"
     out = here / "files" / "microsoft-buildings_point.fgb.zip"
     if lazy and out.exists():
         return out
 
     tab = read_parquet(here / "files" / "microsoft-buildings_point.parquet")
 
-    write_flatgeobuf(tab, out_fgb, write_index=False)
+    with zipfile.ZipFile(out_tmp, "w", compression=zipfile.ZIP_DEFLATED) as fzip:
+        with fzip.open(out.name.replace(".zip", ""), "w", force_zip64=True) as f:
+            write_flatgeobuf(tab, f, write_index=False)
 
-    # Could also use zipfile.ZipFile() here, but zip on the command line
-    # has more intuitive defaults
-    if out_tmp.exists():
-        os.unlink(out_tmp)
-
-    wdir = os.getcwd()
-    try:
-        os.chdir(out_tmp.parent)
-        if os.system(f"zip {out_tmp.name} {out_fgb}") != 0:
-            raise ValueError("zip command failed")
-
-        os.unlink(out_fgb)
-        os.rename(out_tmp, out)
-    finally:
-        os.chdir(wdir)
-
+    os.rename(out_tmp, out)
     return out
 
 

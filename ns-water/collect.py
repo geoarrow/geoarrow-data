@@ -180,7 +180,7 @@ def write_fgb_zip(tab_wkb, out, lazy=True):
     out_tmp = f"{out}.tmp"
 
     with zipfile.ZipFile(out_tmp, "w", compression=zipfile.ZIP_DEFLATED) as fzip:
-        with fzip.open(out.name, "w") as f:
+        with fzip.open(out.name.replace(".zip", ""), "w") as f:
             tab_native = convert_arrow(tab_wkb, gat.type_spec(gat.CoordType.SEPARATED))
             write_flatgeobuf(tab_native, f, write_index=False)
 

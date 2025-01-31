@@ -120,7 +120,7 @@ def _check_native_type(type: pa.DataType, format: str):
 
 def read_format_fgb(file: model.File):
     with zipfile.ZipFile(file.path) as fzip:
-        # assert fzip.namelist() == [file.path.name.replace(".zip", "")]
+        assert fzip.namelist() == [file.path.name.replace(".zip", "")]
         magic = b"\x66\x67\x62\x03\x66\x67\x62\x00"
         with fzip.open(fzip.namelist()[0]) as f:
             assert f.read(len(magic)) == magic
