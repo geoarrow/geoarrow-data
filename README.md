@@ -14,3 +14,7 @@ A geoarrow port of the Nova Scotia Hydrometric Network. This is useful as an exa
 ## [Microsoft U.S. Buliding Footprints](microsoft-buildings#readme)
 
 A geoarrow port of a large (130 million features) point data set.
+
+## [Natural Earth](natural-earth#readme)
+
+Selected [Natural Earth](https://www.naturalearthdata.com/) layers as examples of global data.
