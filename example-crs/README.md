@@ -8,7 +8,7 @@ The data here is a single polygon representing the out line of the state of Verm
 - **UTM Zone 18N** (i.e., EPSG:32620)
 - **Custom orthographic**: An orthographc projection centred on the centroid of the state of Vermont that does not have any identifier in any database.
 
-The OGC:CRS84 version of the data is also included using the CRS representations stated in the GeoArrow specification (`wkt2:2019`, `authority_code`, and omitted to indicate that the producer did not know what the CRS encoding was).
+The above examples are all specified with an explicit `"crs_type": "projjson"` when written in GeoArrow format. The OGC:CRS84 version of the data is also included using the CRS representations stated in the GeoArrow specification (`wkt2:2019`, `authority_code`, and omitted to indicate that the producer did not know what the CRS encoding was).
 
 All versions of Natural Earth raster + vector map data redistributed from this repository are in the public domain.
 

@@ -54,6 +54,11 @@ def write_geoarrow():
         tab = io.read_geoparquet_table(
             here / "files" / f"example-crs_vermont-{label}.parquet"
         )
+
+        # Ensure we write PROJJSON explicitly for these examples. Probably
+        # io.read_geoparquet_table() should make sure this is set.
+        crs = pyproj.CRS(tab["geometry"].type.crs)
+        tab = pa.table({"geometry": ga.with_crs(tab["geometry"], crs)})
         with ipc.new_stream(out, tab.schema) as writer:
             writer.write_table(tab)
 
@@ -77,7 +82,10 @@ def write_geoarrow_alternative_crses():
 
     # Construct these metadatas by hand since that's the whole point of this data
     extension_metadata = {
-        "wkt2": {"crs": pyproj.CRS(tab["geometry"].type.crs).to_wkt(), "crs_type": "wkt2"},
+        "wkt2": {
+            "crs": pyproj.CRS(tab["geometry"].type.crs).to_wkt(),
+            "crs_type": "wkt2",
+        },
         "authority_code": {"crs": "OGC:CRS84", "crs_type": "authority_code"},
         "unknown": {"crs": "OGC:CRS84"},
     }
