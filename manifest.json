@@ -1,5 +1,5 @@
 {
-  "ref": "v0.2.0-rc0",
+  "ref": "REFERENCE",
   "groups": [
     {
       "name": "example",
@@ -7,1102 +7,1182 @@
         {
           "name": "geometry",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry.tsv"
         },
         {
           "name": "geometry",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry_wkt.arrows"
         },
         {
           "name": "geometry",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry_wkb.arrows"
         },
         {
           "name": "geometry",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry.parquet"
         },
         {
           "name": "point",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point.tsv"
         },
         {
           "name": "point",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point.arrows"
         },
         {
           "name": "point",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point_interleaved.arrows"
         },
         {
           "name": "point",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point_wkt.arrows"
         },
         {
           "name": "point",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point_wkb.arrows"
         },
         {
           "name": "point",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point.parquet"
         },
         {
           "name": "point",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point_native.parquet"
         },
         {
           "name": "linestring",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring.tsv"
         },
         {
           "name": "linestring",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring.arrows"
         },
         {
           "name": "linestring",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring_interleaved.arrows"
         },
         {
           "name": "linestring",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring_wkt.arrows"
         },
         {
           "name": "linestring",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring_wkb.arrows"
         },
         {
           "name": "linestring",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring.parquet"
         },
         {
           "name": "linestring",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring_native.parquet"
         },
         {
           "name": "polygon",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon.tsv"
         },
         {
           "name": "polygon",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon.arrows"
         },
         {
           "name": "polygon",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon_interleaved.arrows"
         },
         {
           "name": "polygon",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon_wkt.arrows"
         },
         {
           "name": "polygon",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon_wkb.arrows"
         },
         {
           "name": "polygon",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon.parquet"
         },
         {
           "name": "polygon",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon_native.parquet"
         },
         {
           "name": "multipoint",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint.tsv"
         },
         {
           "name": "multipoint",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint.arrows"
         },
         {
           "name": "multipoint",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint_interleaved.arrows"
         },
         {
           "name": "multipoint",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint_wkt.arrows"
         },
         {
           "name": "multipoint",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint_wkb.arrows"
         },
         {
           "name": "multipoint",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint.parquet"
         },
         {
           "name": "multipoint",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint_native.parquet"
         },
         {
           "name": "multilinestring",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring.tsv"
         },
         {
           "name": "multilinestring",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring.arrows"
         },
         {
           "name": "multilinestring",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring_interleaved.arrows"
         },
         {
           "name": "multilinestring",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring_wkt.arrows"
         },
         {
           "name": "multilinestring",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring_wkb.arrows"
         },
         {
           "name": "multilinestring",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring.parquet"
         },
         {
           "name": "multilinestring",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring_native.parquet"
         },
         {
           "name": "multipolygon",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon.tsv"
         },
         {
           "name": "multipolygon",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon.arrows"
         },
         {
           "name": "multipolygon",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon_interleaved.arrows"
         },
         {
           "name": "multipolygon",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon_wkt.arrows"
         },
         {
           "name": "multipolygon",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon_wkb.arrows"
         },
         {
           "name": "multipolygon",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon.parquet"
         },
         {
           "name": "multipolygon",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon_native.parquet"
         },
         {
           "name": "geometrycollection",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection.tsv"
         },
         {
           "name": "geometrycollection",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection_wkt.arrows"
         },
         {
           "name": "geometrycollection",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection_wkb.arrows"
         },
         {
           "name": "geometrycollection",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection.parquet"
         },
         {
           "name": "geometrycollection-nested",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested.tsv"
         },
         {
           "name": "geometrycollection-nested",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested_wkt.arrows"
         },
         {
           "name": "geometrycollection-nested",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested_wkb.arrows"
         },
         {
           "name": "geometrycollection-nested",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested.parquet"
         },
         {
           "name": "geometry-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-z.tsv"
         },
         {
           "name": "geometry-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-z_wkt.arrows"
         },
         {
           "name": "geometry-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-z_wkb.arrows"
         },
         {
           "name": "geometry-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-z.parquet"
         },
         {
           "name": "point-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z.tsv"
         },
         {
           "name": "point-z",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z.arrows"
         },
         {
           "name": "point-z",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z_interleaved.arrows"
         },
         {
           "name": "point-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z_wkt.arrows"
         },
         {
           "name": "point-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z_wkb.arrows"
         },
         {
           "name": "point-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z.parquet"
         },
         {
           "name": "point-z",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-z_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-z_native.parquet"
         },
         {
           "name": "linestring-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z.tsv"
         },
         {
           "name": "linestring-z",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z.arrows"
         },
         {
           "name": "linestring-z",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z_interleaved.arrows"
         },
         {
           "name": "linestring-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z_wkt.arrows"
         },
         {
           "name": "linestring-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z_wkb.arrows"
         },
         {
           "name": "linestring-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z.parquet"
         },
         {
           "name": "linestring-z",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-z_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-z_native.parquet"
         },
         {
           "name": "polygon-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z.tsv"
         },
         {
           "name": "polygon-z",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z.arrows"
         },
         {
           "name": "polygon-z",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z_interleaved.arrows"
         },
         {
           "name": "polygon-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z_wkt.arrows"
         },
         {
           "name": "polygon-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z_wkb.arrows"
         },
         {
           "name": "polygon-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z.parquet"
         },
         {
           "name": "polygon-z",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-z_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-z_native.parquet"
         },
         {
           "name": "multipoint-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z.tsv"
         },
         {
           "name": "multipoint-z",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z.arrows"
         },
         {
           "name": "multipoint-z",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z_interleaved.arrows"
         },
         {
           "name": "multipoint-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z_wkt.arrows"
         },
         {
           "name": "multipoint-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z_wkb.arrows"
         },
         {
           "name": "multipoint-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z.parquet"
         },
         {
           "name": "multipoint-z",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-z_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-z_native.parquet"
         },
         {
           "name": "multilinestring-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z.tsv"
         },
         {
           "name": "multilinestring-z",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z.arrows"
         },
         {
           "name": "multilinestring-z",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z_interleaved.arrows"
         },
         {
           "name": "multilinestring-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z_wkt.arrows"
         },
         {
           "name": "multilinestring-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z_wkb.arrows"
         },
         {
           "name": "multilinestring-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z.parquet"
         },
         {
           "name": "multilinestring-z",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-z_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-z_native.parquet"
         },
         {
           "name": "multipolygon-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z.tsv"
         },
         {
           "name": "multipolygon-z",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z.arrows"
         },
         {
           "name": "multipolygon-z",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z_interleaved.arrows"
         },
         {
           "name": "multipolygon-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z_wkt.arrows"
         },
         {
           "name": "multipolygon-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z_wkb.arrows"
         },
         {
           "name": "multipolygon-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z.parquet"
         },
         {
           "name": "multipolygon-z",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-z_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-z_native.parquet"
         },
         {
           "name": "geometrycollection-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-z.tsv"
         },
         {
           "name": "geometrycollection-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-z_wkt.arrows"
         },
         {
           "name": "geometrycollection-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-z_wkb.arrows"
         },
         {
           "name": "geometrycollection-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-z.parquet"
         },
         {
           "name": "geometrycollection-nested-z",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-z.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-z.tsv"
         },
         {
           "name": "geometrycollection-nested-z",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-z_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-z_wkt.arrows"
         },
         {
           "name": "geometrycollection-nested-z",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-z_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-z_wkb.arrows"
         },
         {
           "name": "geometrycollection-nested-z",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-z.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-z.parquet"
         },
         {
           "name": "geometry-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-m.tsv"
         },
         {
           "name": "geometry-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-m_wkt.arrows"
         },
         {
           "name": "geometry-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-m_wkb.arrows"
         },
         {
           "name": "geometry-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-m.parquet"
         },
         {
           "name": "point-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m.tsv"
         },
         {
           "name": "point-m",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m.arrows"
         },
         {
           "name": "point-m",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m_interleaved.arrows"
         },
         {
           "name": "point-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m_wkt.arrows"
         },
         {
           "name": "point-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m_wkb.arrows"
         },
         {
           "name": "point-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m.parquet"
         },
         {
           "name": "point-m",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-m_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-m_native.parquet"
         },
         {
           "name": "linestring-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m.tsv"
         },
         {
           "name": "linestring-m",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m.arrows"
         },
         {
           "name": "linestring-m",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m_interleaved.arrows"
         },
         {
           "name": "linestring-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m_wkt.arrows"
         },
         {
           "name": "linestring-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m_wkb.arrows"
         },
         {
           "name": "linestring-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m.parquet"
         },
         {
           "name": "linestring-m",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-m_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-m_native.parquet"
         },
         {
           "name": "polygon-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m.tsv"
         },
         {
           "name": "polygon-m",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m.arrows"
         },
         {
           "name": "polygon-m",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m_interleaved.arrows"
         },
         {
           "name": "polygon-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m_wkt.arrows"
         },
         {
           "name": "polygon-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m_wkb.arrows"
         },
         {
           "name": "polygon-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m.parquet"
         },
         {
           "name": "polygon-m",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-m_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-m_native.parquet"
         },
         {
           "name": "multipoint-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m.tsv"
         },
         {
           "name": "multipoint-m",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m.arrows"
         },
         {
           "name": "multipoint-m",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m_interleaved.arrows"
         },
         {
           "name": "multipoint-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m_wkt.arrows"
         },
         {
           "name": "multipoint-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m_wkb.arrows"
         },
         {
           "name": "multipoint-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m.parquet"
         },
         {
           "name": "multipoint-m",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-m_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-m_native.parquet"
         },
         {
           "name": "multilinestring-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m.tsv"
         },
         {
           "name": "multilinestring-m",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m.arrows"
         },
         {
           "name": "multilinestring-m",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m_interleaved.arrows"
         },
         {
           "name": "multilinestring-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m_wkt.arrows"
         },
         {
           "name": "multilinestring-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m_wkb.arrows"
         },
         {
           "name": "multilinestring-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m.parquet"
         },
         {
           "name": "multilinestring-m",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-m_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-m_native.parquet"
         },
         {
           "name": "multipolygon-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m.tsv"
         },
         {
           "name": "multipolygon-m",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m.arrows"
         },
         {
           "name": "multipolygon-m",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m_interleaved.arrows"
         },
         {
           "name": "multipolygon-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m_wkt.arrows"
         },
         {
           "name": "multipolygon-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m_wkb.arrows"
         },
         {
           "name": "multipolygon-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m.parquet"
         },
         {
           "name": "multipolygon-m",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-m_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-m_native.parquet"
         },
         {
           "name": "geometrycollection-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-m.tsv"
         },
         {
           "name": "geometrycollection-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-m_wkt.arrows"
         },
         {
           "name": "geometrycollection-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-m_wkb.arrows"
         },
         {
           "name": "geometrycollection-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-m.parquet"
         },
         {
           "name": "geometrycollection-nested-m",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-m.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-m.tsv"
         },
         {
           "name": "geometrycollection-nested-m",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-m_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-m_wkt.arrows"
         },
         {
           "name": "geometrycollection-nested-m",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-m_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-m_wkb.arrows"
         },
         {
           "name": "geometrycollection-nested-m",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-m.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-m.parquet"
         },
         {
           "name": "geometry-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-zm.tsv"
         },
         {
           "name": "geometry-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-zm_wkt.arrows"
         },
         {
           "name": "geometry-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-zm_wkb.arrows"
         },
         {
           "name": "geometry-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-zm.parquet"
         },
         {
           "name": "point-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm.tsv"
         },
         {
           "name": "point-zm",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm.arrows"
         },
         {
           "name": "point-zm",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm_interleaved.arrows"
         },
         {
           "name": "point-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm_wkt.arrows"
         },
         {
           "name": "point-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm_wkb.arrows"
         },
         {
           "name": "point-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm.parquet"
         },
         {
           "name": "point-zm",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_point-zm_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_point-zm_native.parquet"
         },
         {
           "name": "linestring-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm.tsv"
         },
         {
           "name": "linestring-zm",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm.arrows"
         },
         {
           "name": "linestring-zm",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm_interleaved.arrows"
         },
         {
           "name": "linestring-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm_wkt.arrows"
         },
         {
           "name": "linestring-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm_wkb.arrows"
         },
         {
           "name": "linestring-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm.parquet"
         },
         {
           "name": "linestring-zm",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_linestring-zm_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_linestring-zm_native.parquet"
         },
         {
           "name": "polygon-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm.tsv"
         },
         {
           "name": "polygon-zm",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm.arrows"
         },
         {
           "name": "polygon-zm",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm_interleaved.arrows"
         },
         {
           "name": "polygon-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm_wkt.arrows"
         },
         {
           "name": "polygon-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm_wkb.arrows"
         },
         {
           "name": "polygon-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm.parquet"
         },
         {
           "name": "polygon-zm",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_polygon-zm_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_polygon-zm_native.parquet"
         },
         {
           "name": "multipoint-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm.tsv"
         },
         {
           "name": "multipoint-zm",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm.arrows"
         },
         {
           "name": "multipoint-zm",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm_interleaved.arrows"
         },
         {
           "name": "multipoint-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm_wkt.arrows"
         },
         {
           "name": "multipoint-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm_wkb.arrows"
         },
         {
           "name": "multipoint-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm.parquet"
         },
         {
           "name": "multipoint-zm",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipoint-zm_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipoint-zm_native.parquet"
         },
         {
           "name": "multilinestring-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm.tsv"
         },
         {
           "name": "multilinestring-zm",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm.arrows"
         },
         {
           "name": "multilinestring-zm",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm_interleaved.arrows"
         },
         {
           "name": "multilinestring-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm_wkt.arrows"
         },
         {
           "name": "multilinestring-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm_wkb.arrows"
         },
         {
           "name": "multilinestring-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm.parquet"
         },
         {
           "name": "multilinestring-zm",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multilinestring-zm_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multilinestring-zm_native.parquet"
         },
         {
           "name": "multipolygon-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm.tsv"
         },
         {
           "name": "multipolygon-zm",
           "format": "arrows",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm.arrows"
         },
         {
           "name": "multipolygon-zm",
           "format": "arrows/interleaved",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm_interleaved.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm_interleaved.arrows"
         },
         {
           "name": "multipolygon-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm_wkt.arrows"
         },
         {
           "name": "multipolygon-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm_wkb.arrows"
         },
         {
           "name": "multipolygon-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm.parquet"
         },
         {
           "name": "multipolygon-zm",
           "format": "geoparquet/native",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_multipolygon-zm_native.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_multipolygon-zm_native.parquet"
         },
         {
           "name": "geometrycollection-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-zm.tsv"
         },
         {
           "name": "geometrycollection-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-zm_wkt.arrows"
         },
         {
           "name": "geometrycollection-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-zm_wkb.arrows"
         },
         {
           "name": "geometrycollection-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-zm.parquet"
         },
         {
           "name": "geometrycollection-nested-zm",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-zm.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-zm.tsv"
         },
         {
           "name": "geometrycollection-nested-zm",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-zm_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-zm_wkt.arrows"
         },
         {
           "name": "geometrycollection-nested-zm",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-zm_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-zm_wkb.arrows"
         },
         {
           "name": "geometrycollection-nested-zm",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometrycollection-nested-zm.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometrycollection-nested-zm.parquet"
         },
         {
           "name": "geometry-mixed-dimensions",
           "format": "tsv",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-mixed-dimensions.tsv"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-mixed-dimensions.tsv"
         },
         {
           "name": "geometry-mixed-dimensions",
           "format": "arrows/wkt",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-mixed-dimensions_wkt.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-mixed-dimensions_wkt.arrows"
         },
         {
           "name": "geometry-mixed-dimensions",
           "format": "arrows/wkb",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-mixed-dimensions_wkb.arrows"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-mixed-dimensions_wkb.arrows"
         },
         {
           "name": "geometry-mixed-dimensions",
           "format": "geoparquet",
-          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0-rc0/example/files/example_geometry-mixed-dimensions.parquet"
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example/files/example_geometry-mixed-dimensions.parquet"
+        }
+      ]
+    },
+    {
+      "name": "example-crs",
+      "files": [
+        {
+          "name": "vermont-crs84",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-crs84_wkb.arrows"
+        },
+        {
+          "name": "vermont-crs84",
+          "format": "geoparquet",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-crs84.parquet"
+        },
+        {
+          "name": "vermont-crs84",
+          "format": "fgb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-crs84.fgb"
+        },
+        {
+          "name": "vermont-4326",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-4326_wkb.arrows"
+        },
+        {
+          "name": "vermont-4326",
+          "format": "geoparquet",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-4326.parquet"
+        },
+        {
+          "name": "vermont-4326",
+          "format": "fgb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-4326.fgb"
+        },
+        {
+          "name": "vermont-utm",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-utm_wkb.arrows"
+        },
+        {
+          "name": "vermont-utm",
+          "format": "geoparquet",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-utm.parquet"
+        },
+        {
+          "name": "vermont-utm",
+          "format": "fgb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-utm.fgb"
+        },
+        {
+          "name": "vermont-custom",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-custom_wkb.arrows"
+        },
+        {
+          "name": "vermont-custom",
+          "format": "geoparquet",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-custom.parquet"
+        },
+        {
+          "name": "vermont-custom",
+          "format": "fgb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-custom.fgb"
+        },
+        {
+          "name": "vermont-crs84-wkt2",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-crs84-wkt2_wkb.arrows"
+        },
+        {
+          "name": "vermont-crs84-auth-code",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-crs84-auth-code_wkb.arrows"
+        },
+        {
+          "name": "vermont-crs84-unknown",
+          "format": "arrows/wkb",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/REFERENCE/example-crs/files/example-crs_vermont-crs84-unknown_wkb.arrows"
         }
       ]
     },
@@ -1112,32 +1192,32 @@
         {
           "name": "point",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/microsoft-buildings_point.fgb.zip"
         },
         {
           "name": "point",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/microsoft-buildings_point.arrows"
         },
         {
           "name": "point",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/microsoft-buildings_point_interleaved.arrows"
         },
         {
           "name": "point",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/microsoft-buildings_point_wkb.arrows"
         },
         {
           "name": "point",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/microsoft-buildings_point.parquet"
         },
         {
           "name": "point",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/microsoft-buildings_point_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/microsoft-buildings_point_native.parquet"
         }
       ]
     },
@@ -1147,32 +1227,32 @@
         {
           "name": "cities",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_cities_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/natural-earth_cities_wkb.arrows"
         },
         {
           "name": "cities",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_cities.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/natural-earth_cities.parquet"
         },
         {
           "name": "countries",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/natural-earth_countries_wkb.arrows"
         },
         {
           "name": "countries",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/natural-earth_countries.parquet"
         },
         {
           "name": "countries-geography",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries-geography_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/natural-earth_countries-geography_wkb.arrows"
         },
         {
           "name": "countries-geography",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/natural-earth_countries-geography.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/natural-earth_countries-geography.parquet"
         }
       ]
     },
@@ -1182,182 +1262,182 @@
         {
           "name": "elevation",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_elevation.fgb.zip"
         },
         {
           "name": "elevation",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_elevation.arrows"
         },
         {
           "name": "elevation",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_elevation_interleaved.arrows"
         },
         {
           "name": "elevation",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_elevation_wkb.arrows"
         },
         {
           "name": "elevation",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_elevation.parquet"
         },
         {
           "name": "elevation",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_elevation_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_elevation_native.parquet"
         },
         {
           "name": "land-poly",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_land-poly.fgb.zip"
         },
         {
           "name": "land-poly",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_land-poly.arrows"
         },
         {
           "name": "land-poly",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_land-poly_interleaved.arrows"
         },
         {
           "name": "land-poly",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_land-poly_wkb.arrows"
         },
         {
           "name": "land-poly",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_land-poly.parquet"
         },
         {
           "name": "land-poly",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_land-poly_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_land-poly_native.parquet"
         },
         {
           "name": "water-junc",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-junc.fgb.zip"
         },
         {
           "name": "water-junc",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-junc.arrows"
         },
         {
           "name": "water-junc",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-junc_interleaved.arrows"
         },
         {
           "name": "water-junc",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-junc_wkb.arrows"
         },
         {
           "name": "water-junc",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-junc.parquet"
         },
         {
           "name": "water-junc",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-junc_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-junc_native.parquet"
         },
         {
           "name": "water-line",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-line.fgb.zip"
         },
         {
           "name": "water-line",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-line.arrows"
         },
         {
           "name": "water-line",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-line_interleaved.arrows"
         },
         {
           "name": "water-line",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-line_wkb.arrows"
         },
         {
           "name": "water-line",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-line.parquet"
         },
         {
           "name": "water-line",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-line_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-line_native.parquet"
         },
         {
           "name": "water-point",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-point.fgb.zip"
         },
         {
           "name": "water-point",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-point.arrows"
         },
         {
           "name": "water-point",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-point_interleaved.arrows"
         },
         {
           "name": "water-point",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-point_wkb.arrows"
         },
         {
           "name": "water-point",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-point.parquet"
         },
         {
           "name": "water-point",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-point_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-point_native.parquet"
         },
         {
           "name": "water-poly",
           "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.fgb.zip"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-poly.fgb.zip"
         },
         {
           "name": "water-poly",
           "format": "arrows",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-poly.arrows"
         },
         {
           "name": "water-poly",
           "format": "arrows/interleaved",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_interleaved.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-poly_interleaved.arrows"
         },
         {
           "name": "water-poly",
           "format": "arrows/wkb",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_wkb.arrows"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-poly_wkb.arrows"
         },
         {
           "name": "water-poly",
           "format": "geoparquet",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-poly.parquet"
         },
         {
           "name": "water-poly",
           "format": "geoparquet/native",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc0/ns-water_water-poly_native.parquet"
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/REFERENCE/ns-water_water-poly_native.parquet"
         }
       ]
     }

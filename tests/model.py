@@ -6,7 +6,7 @@ import yaml
 
 _here = Path(__file__).parent
 
-GROUPS = ("example", "microsoft-buildings", "natural-earth", "ns-water")
+GROUPS = ("example", "example-crs", "microsoft-buildings", "natural-earth", "ns-water")
 
 
 class File:
@@ -121,6 +121,7 @@ def list_manifests(groups=GROUPS):
 SUFFIXES = {
     "tsv": ".tsv",
     "fgb/zip": ".fgb.zip",
+    "fgb": ".fgb",
     "arrows": ".arrows",
     "arrows/interleaved": "_interleaved.arrows",
     "arrows/wkb": "_wkb.arrows",

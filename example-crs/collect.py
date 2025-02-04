@@ -42,7 +42,10 @@ def write_parquet(lazy=True):
         if pd is None:
             pd = download_vermont()
 
-        pd.to_crs(crs).to_parquet(out, compression=None)
+        tab = pa.table({"geometry": ga.array(pd["geometry"].to_crs(crs))})
+        io.write_geoparquet_table(
+            tab, out, compression="none", write_bbox=True, write_geometry_types=True
+        )
 
     return out
 
@@ -86,7 +89,7 @@ def write_geoarrow_alternative_crses():
             "crs": pyproj.CRS(tab["geometry"].type.crs).to_wkt(),
             "crs_type": "wkt2",
         },
-        "authority_code": {"crs": "OGC:CRS84", "crs_type": "authority_code"},
+        "auth-code": {"crs": "OGC:CRS84", "crs_type": "authority_code"},
         "unknown": {"crs": "OGC:CRS84"},
     }
 
@@ -95,9 +98,9 @@ def write_geoarrow_alternative_crses():
             "ARROW:extension:name": "geoarrow.wkb",
             "ARROW:extension:metadata": json.dumps(ext_metadata),
         }
-        schema = pa.schema([pa.field("geometry", pa.binary(), metadata)])
+        schema = pa.schema([pa.field("geometry", pa.binary(), metadata=metadata)])
         tab_out = pa.table([tab["geometry"].chunk(0).storage], schema=schema)
-        out = here / "files" / f"example-crs_vermont-crs84-{name}.arrows"
+        out = here / "files" / f"example-crs_vermont-crs84-{name}_wkb.arrows"
         with ipc.new_stream(out, schema) as writer:
             writer.write_table(tab_out)
 
