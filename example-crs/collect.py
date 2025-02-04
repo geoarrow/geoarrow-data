@@ -1,9 +1,10 @@
-import zipfile
+import json
 from pathlib import Path
 
 import geoarrow.pyarrow as ga
 import geopandas
 import pyarrow as pa
+import pyproj
 from geoarrow.pyarrow import io
 from geoarrow.rust.io import write_flatgeobuf
 from pyarrow import ipc
@@ -46,11 +47,9 @@ def write_parquet(lazy=True):
     return out
 
 
-def write_geoarrow(lazy=True):
+def write_geoarrow():
     for label in CRS_LABELS:
-        out = here / "files" / f"example-crs_vermont-{label}-wkb.arrows"
-        if lazy and out.exists():
-            continue
+        out = here / "files" / f"example-crs_vermont-{label}_wkb.arrows"
 
         tab = io.read_geoparquet_table(
             here / "files" / f"example-crs_vermont-{label}.parquet"
@@ -59,11 +58,9 @@ def write_geoarrow(lazy=True):
             writer.write_table(tab)
 
 
-def write_fgb(lazy=True):
+def write_fgb():
     for label in CRS_LABELS:
-        out = here / "files" / f"example-crs_vermont-{label}-wkb.fgb.zip"
-        if lazy and out.exists():
-            continue
+        out = here / "files" / f"example-crs_vermont-{label}.fgb"
 
         tab = io.read_geoparquet_table(
             here / "files" / f"example-crs_vermont-{label}.parquet"
@@ -71,13 +68,34 @@ def write_fgb(lazy=True):
 
         # geoarrow-rust needs "native" and not WKB-encoding
         tab = pa.table({"geometry": ga.as_geoarrow(tab["geometry"])})
+        with open(out, "wb") as f:
+            write_flatgeobuf(tab, f, write_index=False)
 
-        with zipfile.ZipFile(out, "w", compression=zipfile.ZIP_DEFLATED) as fzip:
-            with fzip.open(out.name.replace(".zip", ""), "w", force_zip64=True) as f:
-                write_flatgeobuf(tab, f, write_index=False)
+
+def write_geoarrow_alternative_crses():
+    tab = io.read_geoparquet_table(here / "files" / "example-crs_vermont-crs84.parquet")
+
+    # Construct these metadatas by hand since that's the whole point of this data
+    extension_metadata = {
+        "wkt2": {"crs": pyproj.CRS(tab["geometry"].type.crs).to_wkt(), "crs_type": "wkt2"},
+        "authority_code": {"crs": "OGC:CRS84", "crs_type": "authority_code"},
+        "unknown": {"crs": "OGC:CRS84"},
+    }
+
+    for name, ext_metadata in extension_metadata.items():
+        metadata = {
+            "ARROW:extension:name": "geoarrow.wkb",
+            "ARROW:extension:metadata": json.dumps(ext_metadata),
+        }
+        schema = pa.schema([pa.field("geometry", pa.binary(), metadata)])
+        tab_out = pa.table([tab["geometry"].chunk(0).storage], schema=schema)
+        out = here / "files" / f"example-crs_vermont-crs84-{name}.arrows"
+        with ipc.new_stream(out, schema) as writer:
+            writer.write_table(tab_out)
 
 
 if __name__ == "__main__":
     write_parquet()
     write_geoarrow()
     write_fgb()
+    write_geoarrow_alternative_crses()

@@ -2,6 +2,7 @@ group: example-crs
 format:
 - arrows/wkb
 - geoparquet
+- fgb
 file_location: repo
 files:
 - name: vermont-crs84
@@ -9,8 +10,8 @@ files:
 - name: vermont-utm
 - name: vermont-custom
 - name: vermont-crs84-wkt2
-  skip_format: [geoparquet]
+  skip_format: [geoparquet, fgb]
 - name: vermont-crs84-auth-code
-  skip_format: [geoparquet]
-- name: vermont-crs84-srid
-  skip_format: [geoparquet]
+  skip_format: [geoparquet, fgb]
+- name: vermont-crs84-unknown
+  skip_format: [geoparquet, fgb]
