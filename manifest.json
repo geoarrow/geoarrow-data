@@ -1261,8 +1261,8 @@
       "files": [
         {
           "name": "elevation",
-          "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_elevation.fgb.zip"
+          "format": "fgb",
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_elevation.fgb"
         },
         {
           "name": "elevation",
@@ -1291,8 +1291,8 @@
         },
         {
           "name": "land-poly",
-          "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_land-poly.fgb.zip"
+          "format": "fgb",
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_land-poly.fgb"
         },
         {
           "name": "land-poly",
@@ -1321,8 +1321,8 @@
         },
         {
           "name": "water-junc",
-          "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-junc.fgb.zip"
+          "format": "fgb",
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-junc.fgb"
         },
         {
           "name": "water-junc",
@@ -1351,8 +1351,8 @@
         },
         {
           "name": "water-line",
-          "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-line.fgb.zip"
+          "format": "fgb",
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-line.fgb"
         },
         {
           "name": "water-line",
@@ -1381,8 +1381,8 @@
         },
         {
           "name": "water-point",
-          "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-point.fgb.zip"
+          "format": "fgb",
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-point.fgb"
         },
         {
           "name": "water-point",
@@ -1411,8 +1411,8 @@
         },
         {
           "name": "water-poly",
-          "format": "fgb/zip",
-          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-poly.fgb.zip"
+          "format": "fgb",
+          "url": "https://github.com/geoarrow/geoarrow-data/releases/download/v0.2.0-rc1/ns-water_water-poly.fgb"
         },
         {
           "name": "water-poly",

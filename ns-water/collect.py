@@ -173,16 +173,15 @@ def write_arrow(tab_wkb, type, out, lazy=True):
     return out
 
 
-def write_fgb_zip(tab_wkb, out, lazy=True):
+def write_fgb(tab_wkb, out, lazy=True):
     if lazy and out.exists():
         return out
 
     out_tmp = f"{out}.tmp"
 
-    with zipfile.ZipFile(out_tmp, "w", compression=zipfile.ZIP_DEFLATED) as fzip:
-        with fzip.open(out.name.replace(".zip", ""), "w") as f:
-            tab_native = convert_arrow(tab_wkb, gat.type_spec(gat.CoordType.SEPARATED))
-            write_flatgeobuf(tab_native, f, write_index=False)
+    with open(out_tmp, "wb") as f:
+        tab_native = convert_arrow(tab_wkb, gat.type_spec(gat.CoordType.SEPARATED))
+        write_flatgeobuf(tab_native, f, write_index=False)
 
     os.rename(out_tmp, out)
     return out
@@ -224,7 +223,7 @@ def write_files(src, name, lazy=True):
     )
 
     print("- Writing FlatGeoBuf")
-    write_fgb_zip(tab, here / "files" / f"ns-water_{name}.fgb.zip", lazy=lazy)
+    write_fgb(tab, here / "files" / f"ns-water_{name}.fgb", lazy=lazy)
 
 
 def extract_archive_to_cache(zip_file):
