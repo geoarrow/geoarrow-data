@@ -7,7 +7,7 @@ from pathlib import Path
 from tests import model
 
 
-def upload_assets(tag):
+def upload_assets():
     here = Path(__file__).parent
 
     for manifest in model.list_manifests():
@@ -42,5 +42,5 @@ if __name__ == "__main__":
         raise ValueError("Must pass tag as first arg")
 
     ref = args[0]
-    # upload_assets(ref)
+    upload_assets()
     check_urls()
