@@ -7,6 +7,10 @@ This repository is a collection of recipies to make a few large-ish data sets av
 
 Toy example files covering the grid of geometry types (point, linestring, polygon, multipoint, multilinestring, multipolygon, geometrycollection), dimensions (xy, xyz, xym, xyzm), and encodings (wkt, wkb, struct coordinates, interleaved coordinates).
 
+## [Coordinate Reference System Examples](example-crs#readme)
+
+Example files containing the range of coordinate reference system encodings allowed by the GeoArrow specification, including files representing the same spatial content in several coordinate systems.
+
 ## [Nova Scotia Water](ns-water#readme)
 
 A geoarrow port of the Nova Scotia Hydrometric Network. This is useful as an example of a projected and aligned set of layers with realisitc attributes.
