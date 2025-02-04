@@ -1,6 +1,6 @@
 group: ns-water
 format:
-- fgb/zip
+- fgb
 - arrows
 - arrows/interleaved
 - arrows/wkb

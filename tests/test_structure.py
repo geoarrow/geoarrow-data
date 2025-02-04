@@ -39,6 +39,8 @@ def test_structure(file: model.File):
         table = read_format_geoparquet(file)
         check_arrows(file, table)
     elif file.format == "fgb/zip":
+        read_format_fgb_zip(file)
+    elif file.format == "fgb":
         read_format_fgb(file)
     else:
         pytest.skip(f"Unimplemented format: {file.format}")
@@ -121,9 +123,15 @@ def _check_native_type(type: pa.DataType, format: str):
         raise ValueError(f"Unexpected format: {format}")
 
 
-def read_format_fgb(file: model.File):
+def read_format_fgb_zip(file: model.File):
     with zipfile.ZipFile(file.path) as fzip:
         assert fzip.namelist() == [file.path.name.replace(".zip", "")]
         magic = b"\x66\x67\x62\x03\x66\x67\x62\x00"
         with fzip.open(fzip.namelist()[0]) as f:
             assert f.read(len(magic)) == magic
+
+
+def read_format_fgb(file: model.File):
+    magic = b"\x66\x67\x62\x03\x66\x67\x62\x00"
+    with open(file.path, "rb") as f:
+        assert f.read(len(magic)) == magic
