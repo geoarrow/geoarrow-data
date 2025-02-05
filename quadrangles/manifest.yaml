@@ -1,0 +1,11 @@
+group: quadrangles
+format:
+- fgb
+- arrows/box
+- arrows
+- arrows/interleaved
+- arrows/wkb
+- geoparquet
+- geoparquet/native
+files:
+- name: 100k

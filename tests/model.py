@@ -6,7 +6,14 @@ import yaml
 
 _here = Path(__file__).parent
 
-GROUPS = ("example", "example-crs", "microsoft-buildings", "natural-earth", "ns-water")
+GROUPS = (
+    "example",
+    "example-crs",
+    "microsoft-buildings",
+    "natural-earth",
+    "quadrangles",
+    "ns-water",
+)
 
 
 class File:
@@ -124,6 +131,7 @@ SUFFIXES = {
     "fgb": ".fgb",
     "arrows": ".arrows",
     "arrows/interleaved": "_interleaved.arrows",
+    "arrows/box": "_box.arrows",
     "arrows/wkb": "_wkb.arrows",
     "arrows/wkt": "_wkt.arrows",
     "geoparquet": ".parquet",

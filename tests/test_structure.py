@@ -30,6 +30,9 @@ def test_structure(file: model.File):
     elif file.format in ("arrows", "arrows/interleaved"):
         table = read_format_arrows(file)
         check_arrows(file, table)
+    elif file.format == "arrows/box":
+        table = read_format_arrows(file)
+        check_box(file, table)
     elif file.format == "tsv":
         read_format_tsv(file)
     elif file.format == "geoparquet":
@@ -97,6 +100,17 @@ def check_wkb(file: model.File, table: pa.Table):
 
 def check_wkt(file: model.File, table: pa.Table):
     assert table["geometry"].type == pa.utf8()
+
+
+def check_box(file: model.File, table: pa.Table):
+    assert table["geometry"].type == pa.struct(
+        [
+            pa.field("xmin", pa.float64(), False),
+            pa.field("ymin", pa.float64(), False),
+            pa.field("xmax", pa.float64(), False),
+            pa.field("ymax", pa.float64(), False),
+        ]
+    )
 
 
 def check_arrows(file: model.File, table: pa.Table):
