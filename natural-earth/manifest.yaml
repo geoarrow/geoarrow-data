@@ -1,9 +1,16 @@
 group: natural-earth
 format:
+- fgb
+- arrows
+- arrows/interleaved
 - arrows/wkb
 - geoparquet
-file_location: release
+- geoparquet/native
 files:
 - name: cities
+  skip_format: [arrows/box]
 - name: countries
+  skip_format: [arrows/box]
 - name: countries-geography
+  skip_format: [fgb, arrows/box]
+- name: countries-bounds
