@@ -1,7 +1,7 @@
 
 # Nova Scotia Water
 
-The Nova Scotia Water data set (i.e., the Nova Scotia Hydrographic Network) and supporting data are provided by the Nova Scotia [Geospatial Data Directory](https://nsgi.novascotia.ca/gdd/).
+The Nova Scotia Water data set (i.e., the Nova Scotia Hydrographic Network) and supporting data are provided by the Nova Scotia [Geospatial Data Directory](https://nsgi.novascotia.ca/gdd/). This data includes Z values and is an example of data distributed through a mainstream channel that requires more than one identifier to capture the CRS (horizontal + vertical CRS identifiers).
 
 These data were obtained under an *Unrestricted Data Use License Agreement for Government Geographic Data* as specified by the Province of Nova Scotia [Geospatial Data Directory](https://nsgi.novascotia.ca/gdd/).
 

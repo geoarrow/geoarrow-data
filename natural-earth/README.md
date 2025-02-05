@@ -1,9 +1,9 @@
 
 # Natural Earth
 
-Selected data from [Natural Earth](https://www.naturalearthdata.com/). Notably, cities and countries as examples of global data.
+Selected data from [Natural Earth](https://www.naturalearthdata.com/). Notably, cities and countries as examples of global data. The `countries-geography` data includes polygons that cover the antimeridian (e.g., Fiji, Russia) and a pole (e.g., Antarctica); the `countries-bounds` data includes two boxes that straddle the antimeridian using `xmax < xmin` behaviour.
 
-All versions of Natural Earth raster + vector map data redistributed here are in the public domain.
+All versions of Natural Earth map data redistributed here are in the public domain.
 
 <!-- begin file listing -->
 

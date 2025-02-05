@@ -21,4 +21,8 @@ A geoarrow port of a large (130 million features) point data set.
 
 ## [Natural Earth](natural-earth#readme)
 
-Selected [Natural Earth](https://www.naturalearthdata.com/) layers as examples of global data.
+Selected [Natural Earth](https://www.naturalearthdata.com/) layers as examples of global data. Also includes examples with spherical edges and boxes that span the antimeridian.
+
+## [Quadrangles](quadrangles#readme)
+
+United States Geological Survey (USGS) map sheet outlines as real-world examples of the "box" type.
