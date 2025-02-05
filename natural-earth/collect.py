@@ -153,9 +153,6 @@ def write_countries_geography():
     ) as writer:
         writer.write_table(tab_native)
 
-    with open(here / "files" / "natural-earth_countries-geography.fgb", "wb") as f:
-        write_flatgeobuf(tab_native, f, write_index=False)
-
 
 def write_countries_box():
     tab = io.read_geoparquet_table(here / "files" / "natural-earth_countries.parquet")
@@ -209,6 +206,18 @@ def write_countries_box():
     ) as writer:
         writer.write_table(tab_native)
 
+    io.write_geoparquet_table(
+        tab_wkb,
+        here / "files" / "natural-earth_countries-bounds.parquet",
+        compression="none",
+    )
+    io.write_geoparquet_table(
+        tab_wkb,
+        here / "files" / "natural-earth_countries-bounds_native.parquet",
+        compression="none",
+        geometry_encoding=io.geoparquet_encoding_geoarrow(),
+    )
+
     with open(here / "files" / "natural-earth_countries-bounds.fgb", "wb") as f:
         write_flatgeobuf(tab_native, f, write_index=False)
 
@@ -235,7 +244,7 @@ def new_box_wkt(b):
 
 
 if __name__ == "__main__":
-    write_cities()
-    write_countries()
-    write_countries_geography()
+    # write_cities()
+    # write_countries()
+    # write_countries_geography()
     write_countries_box()

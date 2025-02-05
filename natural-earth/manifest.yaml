@@ -2,6 +2,7 @@ group: natural-earth
 format:
 - fgb
 - arrows
+- arrows/box
 - arrows/interleaved
 - arrows/wkb
 - geoparquet
