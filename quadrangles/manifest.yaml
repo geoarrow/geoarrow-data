@@ -7,5 +7,6 @@ format:
 - arrows/wkb
 - geoparquet
 - geoparquet/native
+file_location: repo
 files:
 - name: 100k

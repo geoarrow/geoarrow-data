@@ -7,6 +7,7 @@ format:
 - arrows/wkb
 - geoparquet
 - geoparquet/native
+file_location: repo
 files:
 - name: cities
   skip_format: [arrows/box]
