@@ -244,7 +244,7 @@ def new_box_wkt(b):
 
 
 if __name__ == "__main__":
-    # write_cities()
-    # write_countries()
-    # write_countries_geography()
+    write_cities()
+    write_countries()
+    write_countries_geography()
     write_countries_box()
