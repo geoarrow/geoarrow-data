@@ -45,6 +45,8 @@ def test_structure(file: model.File):
         read_format_fgb_zip(file)
     elif file.format == "fgb":
         read_format_fgb(file)
+    elif file.format == "parquet":
+        read_format_parquet(file)
     else:
         pytest.skip(f"Unimplemented format: {file.format}")
 
@@ -61,6 +63,12 @@ def read_format_arrows(file: model.File):
 
         table.validate(full=True)
         return table
+
+
+def read_format_parquet(file: model.File):
+    # Until a released version of pyarrow can actually read these
+    with pytest.raises(OSError, match="Metadata contains Thrift LogicalType that is not recognized"):
+        parquet.read_table(file.path)
 
 
 def read_format_geoparquet(file: model.File):
