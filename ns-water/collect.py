@@ -1,7 +1,6 @@
 import os
 import shutil
 import urllib.request
-import zipfile
 from pathlib import Path
 
 import geoarrow.pyarrow as ga
