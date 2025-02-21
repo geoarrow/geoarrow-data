@@ -9,3 +9,4 @@ files:
   - arrows/wkb
   - geoparquet
   - geoparquet/native
+  - parquet

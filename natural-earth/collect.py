@@ -26,10 +26,12 @@ def write_cities():
     (
         cities_pd[["nameascii", "geometry"]]
         .rename(columns={"nameascii": "name"})
-        .to_parquet(here / "files" / "natural-earth_cities.parquet", compression=None)
+        .to_parquet(
+            here / "files" / "natural-earth_cities_geo.parquet", compression=None
+        )
     )
 
-    tab = io.read_geoparquet_table(here / "files" / "natural-earth_cities.parquet")
+    tab = io.read_geoparquet_table(here / "files" / "natural-earth_cities_geo.parquet")
     io.write_geoparquet_table(
         tab,
         here / "files" / "natural-earth_cities_native.parquet",
@@ -71,11 +73,13 @@ def write_countries():
         countries_pd[["ADMIN", "CONTINENT", "geometry"]]
         .rename(columns={"ADMIN": "name", "CONTINENT": "continent"})
         .to_parquet(
-            here / "files" / "natural-earth_countries.parquet", compression=None
+            here / "files" / "natural-earth_countries_geo.parquet", compression=None
         )
     )
 
-    tab = io.read_geoparquet_table(here / "files" / "natural-earth_countries.parquet")
+    tab = io.read_geoparquet_table(
+        here / "files" / "natural-earth_countries_geo.parquet"
+    )
     io.write_geoparquet_table(
         tab,
         here / "files" / "natural-earth_countries_native.parquet",
@@ -121,7 +125,7 @@ def write_countries_geography():
 
     io.write_geoparquet_table(
         tab,
-        here / "files" / "natural-earth_countries-geography.parquet",
+        here / "files" / "natural-earth_countries-geography_geo.parquet",
         compression="none",
     )
     io.write_geoparquet_table(
@@ -155,7 +159,9 @@ def write_countries_geography():
 
 
 def write_countries_box():
-    tab = io.read_geoparquet_table(here / "files" / "natural-earth_countries.parquet")
+    tab = io.read_geoparquet_table(
+        here / "files" / "natural-earth_countries_geo.parquet"
+    )
 
     # Manually edit a few of the boxes to have max->min behaviour
     boxes = ga.box(tab["geometry"])
@@ -208,7 +214,7 @@ def write_countries_box():
 
     io.write_geoparquet_table(
         tab_wkb,
-        here / "files" / "natural-earth_countries-bounds.parquet",
+        here / "files" / "natural-earth_countries-bounds_geo.parquet",
         compression="none",
     )
     io.write_geoparquet_table(

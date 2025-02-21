@@ -5,6 +5,7 @@ format:
 - arrows/interleaved
 - arrows/wkt
 - arrows/wkb
+- parquet
 - geoparquet
 - geoparquet/native
 file_location: repo

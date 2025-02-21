@@ -42,7 +42,7 @@ def write_everything_else():
     wkb_stream = here / "files" / "quadrangles_100k_wkb.arrows"
     stream = here / "files" / "quadrangles_100k.arrows"
     interleaved_stream = here / "files" / "quadrangles_100k_interleaved.arrows"
-    geoparquet = here / "files" / "quadrangles_100k.parquet"
+    geoparquet = here / "files" / "quadrangles_100k_geo.parquet"
     geoparquet_native = here / "files" / "quadrangles_100k_native.parquet"
     fgb = here / "files" / "quadrangles_100k.fgb"
 

@@ -35,7 +35,7 @@ def write_parquet(lazy=True):
     pd = None
 
     for crs, label in zip(CRSES, CRS_LABELS):
-        out = here / "files" / f"example-crs_vermont-{label}.parquet"
+        out = here / "files" / f"example-crs_vermont-{label}_geo.parquet"
         if lazy and out.exists():
             continue
 
@@ -55,7 +55,7 @@ def write_geoarrow():
         out = here / "files" / f"example-crs_vermont-{label}_wkb.arrows"
 
         tab = io.read_geoparquet_table(
-            here / "files" / f"example-crs_vermont-{label}.parquet"
+            here / "files" / f"example-crs_vermont-{label}_geo.parquet"
         )
 
         # Ensure we write PROJJSON explicitly for these examples. Probably
@@ -71,7 +71,7 @@ def write_fgb():
         out = here / "files" / f"example-crs_vermont-{label}.fgb"
 
         tab = io.read_geoparquet_table(
-            here / "files" / f"example-crs_vermont-{label}.parquet"
+            here / "files" / f"example-crs_vermont-{label}_geo.parquet"
         )
 
         # geoarrow-rust needs "native" and not WKB-encoding
@@ -81,7 +81,7 @@ def write_fgb():
 
 
 def write_geoarrow_alternative_crses():
-    tab = io.read_geoparquet_table(here / "files" / "example-crs_vermont-crs84.parquet")
+    tab = io.read_geoparquet_table(here / "files" / "example-crs_vermont-crs84_geo.parquet")
 
     # Construct these metadatas by hand since that's the whole point of this data
     extension_metadata = {
