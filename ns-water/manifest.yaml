@@ -6,6 +6,7 @@ format:
 - arrows/wkb
 - geoparquet
 - geoparquet/native
+- parquet
 file_location: release
 files:
 - name: elevation

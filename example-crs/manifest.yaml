@@ -3,6 +3,7 @@ format:
 - arrows/wkb
 - geoparquet
 - fgb
+- parquet
 file_location: repo
 files:
 - name: vermont-crs84
@@ -10,7 +11,7 @@ files:
 - name: vermont-utm
 - name: vermont-custom
 - name: vermont-crs84-wkt2
-  skip_format: [geoparquet, fgb]
+  skip_format: [geoparquet, fgb, parquet]
 - name: vermont-crs84-auth-code
   skip_format: [geoparquet, fgb]
 - name: vermont-crs84-unknown

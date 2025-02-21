@@ -124,7 +124,8 @@ if __name__ == "__main__":
     examples = read_examples()
     manifest = read_manifest()
 
-    formats = manifest["format"]
+    # Parquet built in type is added later
+    formats = [f for f in manifest["format"] if f != "parquet"]
     files = manifest["files"]
 
     if (here / "files").exists():
