@@ -130,7 +130,7 @@ def write_countries_geography():
     )
     io.write_geoparquet_table(
         tab,
-        here / "files" / "natural-earth_countries-geography_native_geo.parquet",
+        here / "files" / "natural-earth_countries-geography_native.parquet",
         compression="none",
         geometry_encoding=io.geoparquet_encoding_geoarrow(),
     )
