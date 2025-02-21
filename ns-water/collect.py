@@ -194,7 +194,7 @@ def write_files(src, name, lazy=True):
     tab = read_shp(src)
 
     print("- Writing geoparquet (WKB)...")
-    write_geoparquet(tab, here / "files" / f"ns-water_{name}.parquet", lazy=lazy)
+    write_geoparquet(tab, here / "files" / f"ns-water_{name}_geo.parquet", lazy=lazy)
 
     print("- Writing geoparquet (native)...")
     write_geoparquet_native(

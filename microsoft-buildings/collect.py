@@ -76,8 +76,8 @@ def cache_state_geoparquet(state, ndigits=8, lazy=True):
 
 
 def write_geoparquet(lazy=True):
-    out = here / "files" / "microsoft-buildings_point.parquet"
-    out_tmp = here / "files" / "microsoft-buildings_point.parquet.tmp"
+    out = here / "files" / "microsoft-buildings_point_geo.parquet"
+    out_tmp = here / "files" / "microsoft-buildings_point_geo.parquet.tmp"
     if lazy and out.exists():
         return
 
@@ -124,7 +124,7 @@ def write_arrow(type, out, lazy=True):
     schema = pa.schema({"geometry": type.with_crs(ga.OGC_CRS84)})
     options = ipc.IpcWriteOptions(compression="zstd")
     with (
-        parquet.ParquetFile(here / "files" / "microsoft-buildings_point.parquet") as f,
+        parquet.ParquetFile(here / "files" / "microsoft-buildings_point_geo.parquet") as f,
         ipc.new_stream(out_tmp, schema, options=options) as writer,
     ):
         for i in range(f.num_row_groups):
@@ -141,7 +141,7 @@ def write_geoparquet_native(lazy=True):
     if lazy and out.exists():
         return out
 
-    tab = io.read_geoparquet_table(here / "files" / "microsoft-buildings_point.parquet")
+    tab = io.read_geoparquet_table(here / "files" / "microsoft-buildings_point_geo.parquet")
     io.write_geoparquet_table(
         tab,
         out_tmp,
@@ -161,7 +161,7 @@ def write_fgb(lazy=True):
     if lazy and out.exists():
         return out
 
-    tab = read_parquet(here / "files" / "microsoft-buildings_point.parquet")
+    tab = read_parquet(here / "files" / "microsoft-buildings_point_geo.parquet")
 
     with zipfile.ZipFile(out_tmp, "w", compression=zipfile.ZIP_DEFLATED) as fzip:
         with fzip.open(out.name.replace(".zip", ""), "w", force_zip64=True) as f:

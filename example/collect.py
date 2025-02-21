@@ -115,7 +115,7 @@ SUFFIXES = {
     "arrows/interleaved": "_interleaved.arrows",
     "arrows/wkb": "_wkb.arrows",
     "arrows/wkt": "_wkt.arrows",
-    "geoparquet": ".parquet",
+    "geoparquet": "_geo.parquet",
     "geoparquet/native": "_native.parquet",
 }
 
