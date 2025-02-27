@@ -6,6 +6,7 @@ import json
 import pyarrow as pa
 from pyarrow import parquet
 import geoarrow.pyarrow as ga
+from geoarrow.pyarrow import io
 
 here = Path(__file__).parent
 
@@ -25,7 +26,27 @@ def list_wkb_files():
     return wkb_files
 
 
-def convert_arrow_wkb_to_parquet(src, dst, compression):
+def convert_arrow_wkb_to_parquet(
+    src, dst, compression, write_geoparquet_metadata=False
+):
+    # Calculate the basic GeoParquet metadata to add to the file for readers that
+    # don't support this type (but can return the storage of an unknown logical type)
+    with pa.ipc.open_stream(src) as reader:
+        schema = reader.schema
+
+    if write_geoparquet_metadata:
+        columns = io._geoparquet_columns_from_schema(
+            schema,
+            geometry_columns=["geometry"],
+            primary_geometry_column=["geometry"],
+            add_geometry_types=False,
+        )
+        geo_metadata = {
+            "version": "1.0.0",
+            "primary_column": "geometry",
+            "columns": columns,
+        }
+
     # Maintain chunking from IPC into Parquet so that the statistics
     # are theoretically the same.
     with (
@@ -33,14 +54,17 @@ def convert_arrow_wkb_to_parquet(src, dst, compression):
         parquet.ParquetWriter(
             dst,
             reader.schema,
-            store_schema=False,
+            store_schema=write_geoparquet_metadata,
             compression=compression,
-            write_geospatial_logical_types=True,
         ) as writer,
     ):
         print(f"Reading {src}")
         for batch in reader:
             writer.write_batch(batch)
+
+        if write_geoparquet_metadata:
+            writer.add_key_value_metadata({"geo": json.dumps(geo_metadata)})
+
         print(f"Wrote {dst}")
 
 
@@ -50,12 +74,7 @@ def check_parquet_file(src, dst):
         original_table = reader.read_all()
 
     print(f"Checking {dst}")
-    # with parquet.ParquetFile(dst, arrow_extensions_enabled=False) as f:
-    #     print(f.schema)
-    #     print(f.metadata.metadata)
     with parquet.ParquetFile(dst, arrow_extensions_enabled=True) as f:
-        # print(f.schema)
-        # print(f.metadata.metadata)
         if f.schema_arrow != original_table.schema:
             print(f"Schema mismatch:\n{f.schema_arrow}\nvs\n{original_table.schema}")
             return False
@@ -107,7 +126,9 @@ def generate_geoarrow_data_parquet_files(wkb_files):
             compression = "none"
 
         dst = path.parent / f"{name}.parquet"
-        convert_arrow_wkb_to_parquet(path, dst, compression=compression)
+        convert_arrow_wkb_to_parquet(
+            path, dst, compression=compression, write_geoparquet_metadata=True
+        )
         written_files += 1
         successful_checks += check_parquet_file(path, dst)
 
