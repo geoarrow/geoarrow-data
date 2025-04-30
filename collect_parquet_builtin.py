@@ -1,8 +1,7 @@
 from pathlib import Path
 import json
 
-# Currently requires a special branch of pyarrow with extra GeoArrow features
-# https://github.com/apache/arrow/compare/main...paleolimbot:arrow:parquet-geo-write-files-from-geoarrow
+# Currently requires nightly pyarrow
 import pyarrow as pa
 from pyarrow import parquet
 import geoarrow.pyarrow as ga
@@ -25,9 +24,7 @@ def list_wkb_files():
     return wkb_files
 
 
-def convert_arrow_wkb_to_parquet(
-    src, dst, compression, write_geoparquet_metadata=False
-):
+def convert_arrow_wkb_to_parquet(src, dst, compression):
     # Maintain chunking from IPC into Parquet so that the statistics
     # are theoretically the same.
     with (
@@ -35,7 +32,7 @@ def convert_arrow_wkb_to_parquet(
         parquet.ParquetWriter(
             dst,
             reader.schema,
-            store_schema=write_geoparquet_metadata,
+            store_schema=False,
             compression=compression,
         ) as writer,
     ):
@@ -76,9 +73,7 @@ def generate_geoarrow_data_parquet_files(wkb_files):
             compression = "none"
 
         dst = path.parent / f"{name}.parquet"
-        convert_arrow_wkb_to_parquet(
-            path, dst, compression=compression, write_geoparquet_metadata=True
-        )
+        convert_arrow_wkb_to_parquet(path, dst, compression=compression)
         written_files += 1
         successful_checks += check_parquet_file(path, dst)
 

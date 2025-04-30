@@ -8,7 +8,7 @@ import pyarrow as pa
 from pyarrow import parquet
 import pytest
 
-import model
+from . import model
 
 
 def check_parquet_schema(arrow_wkb_schema, parquet_schema):
@@ -92,12 +92,12 @@ def check_geometry_types_geoarrow(batch, parquet_stats):
 def test_batch_statistics(name_and_item):
     item: model.File = name_and_item[1]
 
-    if "parquet" not in item or "arrows/wkb" not in item:
-        pytest.skip("no parquet file or arrows/wkb file")
-
-    parquet_file = parquet.ParquetFile(
-        item["parquet"].path, arrow_extensions_enabled=True
-    )
+    try:
+        parquet_file = parquet.ParquetFile(
+            item["parquet"].path, arrow_extensions_enabled=True
+        )
+    except TypeError:
+        pytest.skip("forthcoming pyarrow required for test")
 
     wkb_path = item["arrows/wkb"].path
     with pa.ipc.open_stream(wkb_path) as reader:
@@ -117,11 +117,3 @@ def test_batch_statistics(name_and_item):
             check_xy_stats_geopandas(batch, parquet_stats[i])
             check_xy_stats_geoarrow_box(batch, parquet_stats[i])
             check_geometry_types_geoarrow(batch, parquet_stats[i])
-
-
-if __name__ == "__main__":
-    import sys
-
-    pytest.main([__file__, "-vv"] + list(sys.argv[1:]))
-    # names = model.list_items()
-    # test_batch_statistics(list(names.items())[0])
