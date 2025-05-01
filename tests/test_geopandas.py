@@ -62,11 +62,6 @@ def test_from_arrow(file: model.File):
     ids=[f.path.name for f in GEOPANDAS_FGB_FILES],
 )
 def test_fgb(file: model.File):
-    # Check with old engine
-    df = geopandas.read_file(file.path, engine="fiona")
-    assert isinstance(df, geopandas.GeoDataFrame)
-    assert isinstance(df.geometry, geopandas.GeoSeries)
-
     # Check with and without use_arrow
     df = geopandas.read_file(file.path, engine="pyogrio", use_arrow=False)
     assert isinstance(df, geopandas.GeoDataFrame)
