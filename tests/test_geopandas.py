@@ -24,9 +24,8 @@ GEOPANDAS_ARROW_FILES = [
     and f.format not in ("arrows/wkt", "arrows/box")
 ]
 
-GEOPANDAS_FGB_FILES = [
-    f for f in model.list_files() if "fgb" in f.format and "buildings" not in f.group
-]
+# We limit to a million rows on read, so we can handle all .fgb files
+GEOPANDAS_FGB_FILES = [f for f in model.list_files() if "fgb" in f.format]
 
 
 @pytest.mark.parametrize(
@@ -63,10 +62,14 @@ def test_from_arrow(file: model.File):
 )
 def test_fgb(file: model.File):
     # Check with and without use_arrow
-    df = geopandas.read_file(file.path, engine="pyogrio", use_arrow=False)
+    df = geopandas.read_file(
+        file.path, rows=1_000_000, engine="pyogrio", use_arrow=False
+    )
     assert isinstance(df, geopandas.GeoDataFrame)
     assert isinstance(df.geometry, geopandas.GeoSeries)
 
-    df = geopandas.read_file(file.path, engine="pyogrio", use_arrow=True)
+    df = geopandas.read_file(
+        file.path, rows=1_000_000, engine="pyogrio", use_arrow=True
+    )
     assert isinstance(df, geopandas.GeoDataFrame)
     assert isinstance(df.geometry, geopandas.GeoSeries)
