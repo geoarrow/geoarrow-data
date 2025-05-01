@@ -5,11 +5,12 @@ from pathlib import Path
 
 import geoarrow.pyarrow as ga
 import geoarrow.types as gat
+import geopandas
 import pyarrow as pa
 from geoarrow.pyarrow import io
-from geoarrow.rust.io import write_flatgeobuf
 from pyarrow import compute as pc
 from pyarrow import ipc
+import pyogrio
 
 here = Path(__file__).parent
 cache = here / "cache"
@@ -176,11 +177,10 @@ def write_fgb(tab_wkb, out, lazy=True):
     if lazy and out.exists():
         return out
 
-    out_tmp = f"{out}.tmp"
+    out_tmp = f"{out}.tmp.fgb"
 
-    with open(out_tmp, "wb") as f:
-        tab_native = convert_arrow(tab_wkb, gat.type_spec(gat.CoordType.SEPARATED))
-        write_flatgeobuf(tab_native, f, write_index=False)
+    df = geopandas.GeoDataFrame.from_arrow(tab_wkb)
+    pyogrio.write_dataframe(df, out_tmp, spatial_index=False)
 
     os.rename(out_tmp, out)
     return out

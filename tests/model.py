@@ -125,6 +125,18 @@ def list_manifests(groups=GROUPS):
     return [Manifest(_here.parent / group / "manifest.yaml") for group in groups]
 
 
+def list_items(groups=GROUPS):
+    items = {}
+    for file in list_files(groups):
+        key = f"{file.group}_{file.name}"
+        if key not in items:
+            items[key] = {}
+
+        items[key][file.format] = file
+
+    return items
+
+
 SUFFIXES = {
     "tsv": ".tsv",
     "fgb/zip": ".fgb.zip",
