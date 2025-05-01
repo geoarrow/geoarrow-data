@@ -12,8 +12,10 @@ import pyarrow as pa
 import pyarrow.compute as pc
 from geoarrow.pyarrow import io
 from geoarrow.rust.compute import centroid
-from geoarrow.rust.io import read_geojson, read_parquet, write_flatgeobuf, write_parquet
+from geoarrow.rust.io import read_geojson, write_parquet
 from pyarrow import ipc, parquet
+import pyogrio
+import pyproj
 
 here = Path(__file__).parent
 
@@ -124,7 +126,9 @@ def write_arrow(type, out, lazy=True):
     schema = pa.schema({"geometry": type.with_crs(ga.OGC_CRS84)})
     options = ipc.IpcWriteOptions(compression="zstd")
     with (
-        parquet.ParquetFile(here / "files" / "microsoft-buildings_point_geo.parquet") as f,
+        parquet.ParquetFile(
+            here / "files" / "microsoft-buildings_point_geo.parquet"
+        ) as f,
         ipc.new_stream(out_tmp, schema, options=options) as writer,
     ):
         for i in range(f.num_row_groups):
@@ -141,7 +145,9 @@ def write_geoparquet_native(lazy=True):
     if lazy and out.exists():
         return out
 
-    tab = io.read_geoparquet_table(here / "files" / "microsoft-buildings_point_geo.parquet")
+    tab = io.read_geoparquet_table(
+        here / "files" / "microsoft-buildings_point_geo.parquet"
+    )
     io.write_geoparquet_table(
         tab,
         out_tmp,
@@ -156,16 +162,29 @@ def write_geoparquet_native(lazy=True):
 
 
 def write_fgb(lazy=True):
+    out_fgb_tmp = here / "files" / "microsoft-buildings_point.fgb.tmp.fgb"
     out_tmp = here / "files" / "microsoft-buildings_point.fgb.zip.tmp"
     out = here / "files" / "microsoft-buildings_point.fgb.zip"
     if lazy and out.exists():
         return out
 
-    tab = read_parquet(here / "files" / "microsoft-buildings_point_geo.parquet")
+    tab = parquet.read_table(here / "files" / "microsoft-buildings_point_geo.parquet")
+
+    pyogrio.write_arrow(
+        tab,
+        out_fgb_tmp,
+        geometry_name="geometry",
+        geometry_type="Point",
+        crs=pyproj.CRS("OGC:CRS84").to_wkt(),
+        spatial_index=False
+    )
 
     with zipfile.ZipFile(out_tmp, "w", compression=zipfile.ZIP_DEFLATED) as fzip:
-        with fzip.open(out.name.replace(".zip", ""), "w", force_zip64=True) as f:
-            write_flatgeobuf(tab, f, write_index=False)
+        with (
+            open(out_fgb_tmp, "rb") as fin,
+            fzip.open(out.name.replace(".zip", ""), "w", force_zip64=True) as fout,
+        ):
+            shutil.copyfileobj(fin, fout)
 
     os.rename(out_tmp, out)
     return out
