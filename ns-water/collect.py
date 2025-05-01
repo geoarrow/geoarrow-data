@@ -10,6 +10,7 @@ import pyarrow as pa
 from geoarrow.pyarrow import io
 from pyarrow import compute as pc
 from pyarrow import ipc
+import pyogrio
 
 here = Path(__file__).parent
 cache = here / "cache"
@@ -176,10 +177,10 @@ def write_fgb(tab_wkb, out, lazy=True):
     if lazy and out.exists():
         return out
 
-    out_tmp = f"{out}.tmp"
+    out_tmp = f"{out}.tmp.fgb"
 
     df = geopandas.GeoDataFrame.from_arrow(tab_wkb)
-    df.to_file(out_tmp, driver="flatgeobuf", spatial_index=False)
+    pyogrio.write_dataframe(df, out_tmp, spatial_index=False)
 
     os.rename(out_tmp, out)
     return out

@@ -65,11 +65,12 @@ def read_format_arrows(file: model.File):
 
 
 def read_format_parquet(file: model.File):
-    # Until a released version of pyarrow can actually read these
-    with pytest.raises(
-        OSError, match="Metadata contains Thrift LogicalType that is not recognized"
-    ):
-        parquet.read_table(file.path)
+    with parquet.ParquetFile(file.path) as f:
+        schema = f.schema_arrow
+        check_field_names(schema.names)
+        col = f.schema.column(len(schema.names) - 1)
+        col_dict = json.loads(col.logical_type.to_json())
+        assert col_dict["Type"] in ("Geometry", "Geography")
 
 
 def read_format_geoparquet(file: model.File):
@@ -148,13 +149,13 @@ def _check_native_type(type: pa.DataType, format: str):
 def read_format_fgb_zip(file: model.File):
     with zipfile.ZipFile(file.path) as fzip:
         assert fzip.namelist() == [file.path.name.replace(".zip", "")]
-        magic = b"\x66\x67\x62\x03\x66\x67\x62\x00"
+        magic = b"\x66\x67\x62\x03\x66\x67\x62"
         with fzip.open(fzip.namelist()[0]) as f:
             assert f.read(len(magic)) == magic
 
 
 def read_format_fgb(file: model.File):
-    magic = b"\x66\x67\x62\x03\x66\x67\x62\x00"
+    magic = b"\x66\x67\x62\x03\x66\x67\x62"
     with open(file.path, "rb") as f:
         assert f.read(len(magic)) == magic
 
