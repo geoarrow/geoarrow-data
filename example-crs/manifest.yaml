@@ -11,7 +11,7 @@ files:
 - name: vermont-utm
 - name: vermont-custom
 - name: vermont-crs84-wkt2
-  skip_format: [geoparquet, fgb, parquet]
+  skip_format: [geoparquet, fgb]
 - name: vermont-crs84-auth-code
   skip_format: [geoparquet, fgb]
 - name: vermont-crs84-unknown

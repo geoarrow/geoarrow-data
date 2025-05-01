@@ -1380,6 +1380,11 @@
           "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0/example-crs/files/example-crs_vermont-crs84-wkt2_wkb.arrows"
         },
         {
+          "name": "vermont-crs84-wkt2",
+          "format": "parquet",
+          "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0/example-crs/files/example-crs_vermont-crs84-wkt2.parquet"
+        },
+        {
           "name": "vermont-crs84-auth-code",
           "format": "arrows/wkb",
           "url": "https://raw.githubusercontent.com/geoarrow/geoarrow-data/v0.2.0/example-crs/files/example-crs_vermont-crs84-auth-code_wkb.arrows"

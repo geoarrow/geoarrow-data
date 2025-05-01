@@ -9,7 +9,7 @@ from . import model
 GEOPANDAS_PARQUET_FILES = [
     f
     for f in model.list_files()
-    if "geoparquet" in f.format and "buildings" not in f.group
+    if "geoparquet" in f.format and "buildings" not in f.group and not f.name.endswith("m")
 ]
 
 # Skip buildings because it takes too long to load, skip wkt and box because
